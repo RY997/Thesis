@@ -1,3 +1,19 @@
+- hi welcome to the exercise creation experiment (do not mention IRIS)
+- you will be applying changes to programming exercises
+
+- while working, please start screen recording! we need a video of your screen
+- do not use AI tools during the process
+
+- here are your tasks:
+    - experiment 1: your goal is to XYZ, please change the exercise so it ABC
+    - experiment 2: ...
+    - experiment 3: ...
+
+- after you are done, fill the survey: <link>
+
+---
+
+
 **Experiment 1: Replacing Search Algorithms**
 
 **Task:** Your task is to replace binary searching algorithm with jump searching algorithm within the programming exercise.
