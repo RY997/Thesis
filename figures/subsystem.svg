@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="-0.5 117.846 622 472.654" style="background-color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">ul { margin-top: 0px; margin-bottom: 10px; }
+ol { margin-top: 0px; margin-bottom: 10px; }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: .5rem; font-weight: 500; line-height: 1.2; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: .5rem; }
+.h1, h1 { font-size: 2.5rem; }
+h2 { font-size: 1.5em; font-weight: bold; }
+h3 { font-size: 1.17em; font-weight: bold; }
+.h4, h4 { font-size: 1.5rem; }
+.h5, h5 { font-size: 1.25rem; }
+.h6, h6 { font-size: 1rem; }
+p { margin-top: 0; margin-bottom: 1rem; }
+a { color: #007bff; }
+</style>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, -9.088899612426758, -42.58005142211914)">
+    <g shape-node="">
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-1" x="229" y="362" width="392" height="117" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-1" x="229" y="362" width="392" height="117" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-1" d="M 606 367 L 616 367" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-1" d="M 616 367 L 616 383" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-1" d="M 606 383 L 616 383" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-1" d="M 606 367 L 606 370" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-1" x="603" y="370" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-1" d="M 606 374 L 606 376" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-1" x="603" y="376" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-1" d="M 606 380 L 606 383" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="xYyc0IsbKpE5IYurfQZQ-1" fill="#000000" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-1" x="415" y="377.5" style="white-space: pre;">&lt;&lt;component&gt;&gt;</text>
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-1" x="415" y="391.5" style="white-space: pre;">Artemis Server</text>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-2" x="248.5" y="414" width="123" height="40" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-2" x="248.5" y="414" width="123" height="40" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-2" d="M 356.5 419 L 366.5 419" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-2" d="M 366.5 419 L 366.5 435" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-2" d="M 356.5 435 L 366.5 435" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-2" d="M 356.5 419 L 356.5 422" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-2" x="353.5" y="422" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-2" d="M 356.5 426 L 356.5 428" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-2" x="353.5" y="428" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-2" d="M 356.5 432 L 356.5 435" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="xYyc0IsbKpE5IYurfQZQ-2" fill="#000000" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-2" x="300" y="429.5" style="white-space: pre;">&lt;&lt;component&gt;&gt;</text>
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-2" x="300" y="443.5" style="white-space: pre;">Iris Server</text>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-3" x="466" y="414" width="132" height="40" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-3" x="466" y="414" width="132" height="40" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-3" d="M 583 419 L 593 419" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-3" d="M 593 419 L 593 435" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-3" d="M 583 435 L 593 435" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-3" d="M 583 419 L 583 422" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-3" x="580" y="422" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-3" d="M 583 426 L 583 428" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-3" x="580" y="428" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-3" d="M 583 432 L 583 435" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="xYyc0IsbKpE5IYurfQZQ-3" fill="#000000" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-3" x="522" y="429.5" style="white-space: pre;">&lt;&lt;component&gt;&gt;</text>
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-3" x="522" y="443.5" style="white-space: pre;">Git Service</text>
+      </g>
+    </g>
+    <g shape-node="">
+      <ellipse cell-id="xYyc0IsbKpE5IYurfQZQ-4" cx="422.5" cy="426" rx="10" ry="10" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <ellipse cell-id="xYyc0IsbKpE5IYurfQZQ-4" cx="422.5" cy="426" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="xYyc0IsbKpE5IYurfQZQ-4" fill="#000000" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-4" x="422" y="453.5" style="white-space: pre;">git service</text>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-5" d="M 371.5 426 L 377.54 426 Q 383.57 426 393.57 426 L 407.5 426" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-5" d="M 422.5 441 C 414.22 441 407.5 434.28 407.5 426 C 407.5 417.71 414.22 411 422.5 411" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-6" d="M 432.5 426 L 441.04 426 Q 449.57 426 457.79 426 L 466 426" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-7" x="241" y="550" width="136" height="40" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-7" x="241" y="550" width="136" height="40" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-7" d="M 362 555 L 372 555" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-7" d="M 372 555 L 372 571" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-7" d="M 362 571 L 372 571" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-7" d="M 362 555 L 362 558" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-7" x="359" y="558" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-7" d="M 362 562 L 362 564" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-7" x="359" y="564" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-7" d="M 362 568 L 362 571" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="xYyc0IsbKpE5IYurfQZQ-7" fill="#000000" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-7" x="299" y="565.5" style="white-space: pre;">&lt;&lt;component&gt;&gt;</text>
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-7" x="299" y="579.5" style="white-space: pre;">Database</text>
+      </g>
+    </g>
+    <g shape-node="">
+      <ellipse cell-id="xYyc0IsbKpE5IYurfQZQ-8" cx="310" cy="513" rx="10" ry="10" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <ellipse cell-id="xYyc0IsbKpE5IYurfQZQ-8" cx="310" cy="513" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-9" d="M 310 523 L 310 550" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-10" d="M 311.29 453.43 L 311.74 498.1" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-10" d="M 295 513 C 295 504.71 301.71 498 310 498 C 318.28 498 325 504.71 325 513" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-11" x="20" y="413" width="119" height="40" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-11" x="20" y="413" width="119" height="40" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-11" d="M 124 418 L 134 418" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-11" d="M 134 418 L 134 434" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-11" d="M 124 434 L 134 434" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-11" d="M 124 418 L 124 421" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-11" x="121" y="421" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-11" d="M 124 425 L 124 427" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-11" x="121" y="427" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-11" d="M 124 431 L 124 434" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="xYyc0IsbKpE5IYurfQZQ-11" fill="#000000" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-11" x="69.5" y="428.5" style="white-space: pre;">&lt;&lt;component&gt;&gt;</text>
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-11" x="69.5" y="442.5" style="white-space: pre;">Pyris</text>
+      </g>
+    </g>
+    <g shape-node="">
+      <ellipse cell-id="xYyc0IsbKpE5IYurfQZQ-12" cx="184" cy="433" rx="10" ry="10" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <ellipse cell-id="xYyc0IsbKpE5IYurfQZQ-12" cx="184" cy="433" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="xYyc0IsbKpE5IYurfQZQ-12" fill="#000000" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-12" x="183.5" y="460.5" style="white-space: pre;">REST</text>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-13" d="M 174 432.86 L 166.5 432.86 Q 159 432.86 149 432.86 L 139 432.86" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-14" d="M 248.43 433.43 L 198.98 433.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-14" d="M 184 418 C 192.28 418 199 424.72 199 433 C 199 441.28 192.28 448 184 448" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-15" x="230" y="201" width="177" height="92" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-15" x="230" y="201" width="177" height="92" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-15" d="M 392 206 L 402 206" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-15" d="M 402 206 L 402 222" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-15" d="M 392 222 L 402 222" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-15" d="M 392 206 L 392 209" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-15" x="389" y="209" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-15" d="M 392 213 L 392 215" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-15" x="389" y="215" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-15" d="M 392 219 L 392 222" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="xYyc0IsbKpE5IYurfQZQ-15" fill="#000000" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-15" x="308.5" y="216.5" style="white-space: pre;">&lt;&lt;component&gt;&gt;</text>
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-15" x="308.5" y="230.5" style="white-space: pre;">Artemis Client</text>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-16" x="249.5" y="242" width="120.98" height="40" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-16" x="249.5" y="242" width="120.98" height="40" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-16" d="M 355.48 247 L 365.48 247" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-16" d="M 365.48 247 L 365.48 263" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-16" d="M 355.48 263 L 365.48 263" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-16" d="M 355.48 247 L 355.48 250" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-16" x="352.48" y="250" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-16" d="M 355.48 254 L 355.48 256" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-16" x="352.48" y="256" width="7" height="4" fill="none" stroke="#000000" pointer-events="all"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-16" d="M 355.48 260 L 355.48 263" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="xYyc0IsbKpE5IYurfQZQ-16" fill="#000000" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-16" x="299.99" y="257.5" style="white-space: pre;">&lt;&lt;component&gt;&gt;</text>
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-16" x="299.99" y="271.5" style="white-space: pre;">Iris Client</text>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-17" d="M 331.29 282 L 330.71 284.57 Q 330.14 287.14 329.88 297.14 L 329.58 308.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-17" d="M 316.29 323.12 C 316.29 314.84 323.01 308.12 331.29 308.12 C 339.58 308.12 346.29 314.84 346.29 323.12" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-18" d="M 331.29 333.12 L 331.29 413.43" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+    <g shape-node="">
+      <ellipse cell-id="xYyc0IsbKpE5IYurfQZQ-19" cx="331.29" cy="323.12" rx="10" ry="10" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <ellipse cell-id="xYyc0IsbKpE5IYurfQZQ-19" cx="331.29" cy="323.12" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="xYyc0IsbKpE5IYurfQZQ-19" fill="#000000" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-19" x="330.79" y="350.62" style="white-space: pre;">REST</text>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-20" d="M 282.71 282 L 282.71 292 Q 282.71 302 282.46 304.57 L 282.21 307.13" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-20" d="M 267.02 321.29 C 267.33 315.93 270.46 311.15 275.24 308.74 C 280.03 306.32 285.74 306.65 290.22 309.58 C 294.7 312.52 297.28 317.62 296.98 322.97" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-21" d="M 282.14 332.13 L 282.14 357.14 Q 282.14 367.14 282.27 377.14 L 282.71 413.43" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+    <g shape-node="">
+      <ellipse cell-id="xYyc0IsbKpE5IYurfQZQ-22" cx="282" cy="322.13" rx="10" ry="10" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <ellipse cell-id="xYyc0IsbKpE5IYurfQZQ-22" cx="282" cy="322.13" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="xYyc0IsbKpE5IYurfQZQ-22" fill="#000000" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="12px">
+        <text cell-id="xYyc0IsbKpE5IYurfQZQ-22" x="281.5" y="349.63" style="white-space: pre;">Websocket</text>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="xYyc0IsbKpE5IYurfQZQ-23" x="0" y="0" width="80" height="40" fill="#7acff5" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="xYyc0IsbKpE5IYurfQZQ-23" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="xYyc0IsbKpE5IYurfQZQ-23" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 4px; margin-left: 1px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'Helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; font-weight: bold; text-decoration: underline; word-break: break-word; white-space: normal; word-wrap: normal;">Instance</div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-5" d="M 371.5 426 L 377.54 426 Q 383.57 426 393.57 426 L 407.5 426" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-5" d="M 422.5 441 C 414.22 441 407.5 434.28 407.5 426 C 407.5 417.71 414.22 411 422.5 411" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-6" d="M 432.5 426 L 441.04 426 Q 449.57 426 457.79 426 L 466 426" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-9" d="M 310 523 L 310 550" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-10" d="M 311.29 453.43 L 311.74 498.1" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-10" d="M 295 513 C 295 504.71 301.71 498 310 498 C 318.28 498 325 504.71 325 513" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-13" d="M 174 432.86 L 166.5 432.86 Q 159 432.86 149 432.86 L 139 432.86" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-14" d="M 248.43 433.43 L 198.98 433.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-14" d="M 184 418 C 192.28 418 199 424.72 199 433 C 199 441.28 192.28 448 184 448" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-17" d="M 331.29 282 L 330.71 284.57 Q 330.14 287.14 329.88 297.14 L 329.58 308.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-17" d="M 316.29 323.12 C 316.29 314.84 323.01 308.12 331.29 308.12 C 339.58 308.12 346.29 314.84 346.29 323.12" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-18" d="M 331.29 333.12 L 331.29 413.43" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-20" d="M 282.71 282 L 282.71 292 Q 282.71 302 282.46 304.57 L 282.21 307.13" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-20" d="M 267.02 321.29 C 267.33 315.93 270.46 311.15 275.24 308.74 C 280.03 306.32 285.74 306.65 290.22 309.58 C 294.7 312.52 297.28 317.62 296.98 322.97" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="xYyc0IsbKpE5IYurfQZQ-21" d="M 282.14 332.13 L 282.14 357.14 Q 282.14 367.14 282.27 377.14 L 282.71 413.43" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+  </g>
+</svg>
