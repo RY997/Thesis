@@ -10,6 +10,11 @@ to communicate with Iris via a chat window on the *Code Editor* page (Figure 1)
 
 **F1.3 View continuous changes in *Code Editor***: Users will be able to view Iris changes in the code editor.
 
+
+<img src="figures/chat.png" alt="iris-chat-window" width="200"/>
+<img src="figures/exercise-plan.png" alt="iris-exercise-plan" width="200">
+<img src="figures/plan-complete.png" alt="plan-execution-complete" width="200">
+
 **Experiment 1: Replacing Search Algorithms**
 
 **Task:** Your task is to replace binary searching algorithm with jump searching algorithm within the programming exercise.
