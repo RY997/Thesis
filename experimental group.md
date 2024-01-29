@@ -1,4 +1,27 @@
-IRIS, our interactive AI-based assistant tool, one of the main feature is to assist with programming exercise adaptation.
+- hi welcome to the experiment on iris for exercise creation
+- you will be using iris as assistant to apply changes to programming exercises
+- in general, here's how it works
+    - enter a request
+    - insepct the action plan
+    - accept it or request changes
+    - wait until the changes are applied
+    - inspect the changes; ask it for fixes or apply manual corrections
+
+- while working, please start screen recording! we need a video of your screen
+- do not use alternative AI tools during the process
+
+- here are your tasks:
+    - experiment 1: your goal is to XYZ, please change the exercise so it ABC
+    - experiment 2: ...
+    - experiment 3: ...
+
+- after you are done, fill the survey: <link>
+
+---
+
+
+
+IRIS, our interactive AI-based assistant chat-bot, one of the main feature is to assist with programming exercise adaptation.
 
 Iris code editor feature:
 
