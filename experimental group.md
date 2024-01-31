@@ -32,7 +32,7 @@ Thank you for participating in the Exercise Creation Experiment! Happy coding!
 **Procedure:**
 
 1. Login Artemis with a tutor account 
-2. Go to **Iris Experimental Study Course 2**
+2. Go to **Experimental Study Course 2**
 3. Choose one of the **Searching algorithm strategy** programming exercise (each tutor needs to choose different exercises) and open it in online editor (click “Edit in editor”)
 4. Start to record your screen
 5. Go through the four components(problem statement, template repository, solution repository and test repository) of the exercise
@@ -45,7 +45,7 @@ Thank you for participating in the Exercise Creation Experiment! Happy coding!
 **Procedure:**
 
 1. Login Artemis with a tutor account 
-2. Go to **Iris Experimental Study Course 2**
+2. Go to **Experimental Study Course 2**
 3. Choose one of the **Binary search algorithm** programming exercise (each tutor needs to choose different exercises)
 4. Start to record your screen
 5. Go through the four components(problem statement, template repository, solution repository and test repository) of the exercise
@@ -59,7 +59,7 @@ Thank you for participating in the Exercise Creation Experiment! Happy coding!
 **Procedure:**
 
 1. Login Artemis with a tutor account 
-2. Go to **Iris Experimental Study Course 2**
+2. Go to **Experimental Study Course 2**
 3. Choose one of the **Bubble sort algorithm** programming exercise (each tutor needs to choose different exercises)
 4. Start to record your screen
 5. Go through the four components(problem statement, template repository, solution repository and test repository) of the exercise
