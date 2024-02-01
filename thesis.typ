@@ -255,7 +255,7 @@ In this section, we will define the formal requirements for the AI assistant int
 
 ]  
   
-  The entire programming exercise necessitates manual adaptation in the online Code Editor or within a local Integrated Development Environment (IDE) after cloning the corresponding repositories locally each time. It is important to note that the feature set of the online code editor may not be as comprehensive as that of a local IDE. Utilizing a local IDE is recommended, as it not only provides a more robust set of features but also enables more efficient handling of version controls. This ensures a seamless and enhanced development experience, allowing participants to fully leverage the capabilities of their chosen development environment.
+  The entirety of the programming exercise demands manual adaptation either through the online Code Editor or within a local Integrated Development Environment (IDE). It is crucial to acknowledge that the feature set of the online code editor might not be as extensive as that of a local IDE. However, opting for a local IDE involves additional configuration efforts and the necessity to clone the repository for each exercise.
 
 == Proposed System
 #rect(
@@ -268,7 +268,9 @@ In this section, we will define the formal requirements for the AI assistant int
 
   based on current Iris system
 ]
-The current exercise creation workflow is enhanced with generative AI capabilities. Through collaboration with an embedded ChatGPT-style chatbot, instructors can effortlessly articulate their vision for the exercise, witnessing the Code Editor automatically adapt to their specifications. This innovative approach empowers instructors with the flexibility to maintain full control over the exercise while allowing the AI to seamlessly introduce numerous additions or modifications. The generated content, shaped by the AI, can span the entirety of the exercise or be as concise as a single line of code. This streamlined and intuitive process not only accelerates exercise creation but also fosters a dynamic and collaborative environment between instructors and artificial intelligence, unlocking new possibilities for engaging and effective programming education.
+We propose Iris code editor system which is enhanced with generative AI capabilities. Through collaboration with an embedded ChatGPT-style chatbot, instructors can effortlessly articulate their vision for the exercise, witnessing the Code Editor automatically adapt to their specifications. This innovative approach empowers instructors with the flexibility to maintain full control over the exercise while allowing the AI to seamlessly introduce numerous additions or modifications. The generated content, shaped by the AI, can span the entirety of the exercise or be as concise as a single line of code. This streamlined and intuitive process not only accelerates exercise creation but also fosters a dynamic and collaborative environment between instructors and artificial intelligence, unlocking new possibilities for engaging and effective programming education. In the following,
+we will describe the functional and non-functional requirements of Iris code editor system using
+the Requirements Analysis Document Template in [BD09]
 
 === Functional Requirements
 #rect(
@@ -283,47 +285,17 @@ The current exercise creation workflow is enhanced with generative AI capabiliti
   - FR2 Short Title: Short Description. 
   - FR3 Short Title: Short Description.
 ]
+Functional requirements stand independent of implementation details, specifically focusing on describing the interactions between the system and its environment, as articulated in [BD09].
 
-- FR1 Chat window: The system will feature a chat window on the Code Editor page.
-- FR2: Resize chat window: The chat window will be resizeable, allowing the user to adjust its size.
-3. FR: Minimize chat window: The chat window will be minimizeable, allowing the user to hide it
-and show it again.
-4. FR: User types in chat window: The user can type into the chat window and send messages to an
-LLM.
-5. FR: LLM responds to user: The responses from the LLM to the user will be displayed in the chat
-window.
-6. FR: Clear chat window: The chat window will have a button that allows the user to clear the chat
-history.
-7. FR: LLM suggests plan: In the event that the LLM decides it understands the user’s request, the
-LLM will additionally suggest a plan of action for adapting the exercise based on the user’s
-input, which will be displayed to the user in the chat window below the LLM’s response.
-8. FR: Plan consists of components: The generation plan will consist of a list of one to four of the
-exercise components (problem statement, solution, template, test repository) that will be
-changed by the LLM, in the order in which they will be changed.
-9. FR: Plan component change description: Each component of the the generation plan will contain
-a description of the change(s) that will be made to that component.
-10. FR: Plan is modifiable: The user will be able to modify the generation plan, including but not
-limited to: removing components from the plan that the user does not want to be changed; re-
-ordering the components in the generation plan; modifying the details of the changes to be
-made to a particular component.
-11. FR: User executes plan: The user will be able to execute the plan, which will trigger the LLM to
-perform the actions described in each component of the plan. The plan will be executed in the
-order in which the components appear in the plan, not requiring the user to execute the plan
-one component at a time.
-12. FR: Plan execution pauses on error: If an error occurs while executing the plan, the plan will
-pause execution and display an error message to the user in the chat window. The user can
-choose to retry the execution of the plan starting from the component that failed.
-13. FR: Changes are highlighted: The changes made by the LLM to the exercise will be highlighted
-as changes in the Code Editor for the user to see.
-14. FR: User can undo and redo changes: The user will be able to undo and redo the changes made to
-a specific component of the exercise by LLM plan with a single button press or keyboard
-shortcut.
-15. FR: Create exercise: The system will be able to create a new programming exercise with no
-existing exercise content based on the user’s input into the chat window.
-16. FR: Adapt exercise: The system will be able to adapt the content an existing programming
-exercise in-place based on the user’s input into the chat window.
-17. FR: Generate variant: The system will be able to generate a variant of an existing programming
-exercise based on the user’s input into the chat window.
+- FR1 Chat with Iris in Code Editor: The user can chat with Iris via a chat window in Code Editor.
+- FR2 Iris suggests plan: In the event that the LLM decides it understands the user’s request, the LLM will additionally suggest a plan of action for adapting the exercise based on the user’s input, which will be displayed to the user in the chat window.
+- FR3 Review exercise plan: The user should be able to review the plan of each component.
+- FR4 Modify exercise plan: The user will be able to modify the generation plan.
+- FR5 Execute exercise plan: The user will be able to execute the plan, which will trigger the LLM to perform the actions described in each component of the plan. The plan will be executed in the order in which the components appear in the plan.
+- FR6 Pause and resume exercise plan: The user should be able to pause and resume the execution of the plan at any time, causing Iris to stop or resume at the next possible step.
+- FR7 View plan execution error: If an error occurs while executing the plan, the user should be notified of the error and the plan will be paused.
+- FR8 View changes in Code Editor: The user should be able to view applied changes in Code Editor.
+- FR9 Clear chat history: The chat window will have a button that allows the user to clear the chat history.
 
 === Nonfunctional Requirements
 #rect(
@@ -340,25 +312,14 @@ exercise based on the user’s input into the chat window.
 
 ]
 
-- NFR1 Functionality: The changes made by the LLM to the exercise will be accurate and relevant to
-the user’s input and the context of the exercise.
-2. NFR: Usability: The chat window will be minimizable and resizeable with a single click or drag,
-respectively.
-3. NFR: Usability: The chat window will be clearly labeled and identifiable as a chat window.
-4. NFR: Performance: The chat window will be responsive to the user’s input, with the LLM’s
-response to the user being displayed within 5 seconds of the user sending a message, and the
-progress of a plan execution being displayed to the user no more than 2 seconds after the plan’s
-execution has progressed.
-5. NFR: Supportability: The system will be LLM-agnostic, supporting any LLM that is capable of
-communicating with the system via the chat window.
-6. NFR: Supportability: The system will be configurable, allowing the user to specify the LLM that
-the system will communicate with.
-7. NFR: Reliability: The system will be able to handle any input from the user, including invalid
-input, without crashing.
-8. NFR: Reliability: The system will be able to handle any response from the LLM, including invalid
-responses, without crashing.
-9. NFR: Usability: The system will display accurate error messages to the user in the case of
-exceptional behavior, such as invalid input or invalid responses from the LLM.
+- NFR1 Functionality: The changes made by the LLM to the exercise will be accurate and relevant to the user’s input and the context of the exercise.
+- NFR2 Usability: The chat window will be minimizable and resizeable with a single click or drag respectively.
+- NFR3 Usability: The chat window will be clearly labeled and identifiable as a chat window.
+- NFR4 Supportability: The system will be LLM-agnostic, supporting any LLM that is capable of communicating with the system via the chat window.
+- NFR5 Supportability: The system will be configurable, allowing the user to specify the LLM that the system will communicate with.
+- NFR6 Reliability: The system will be able to handle any input from the user, including invalid input, without crashing.
+- NFR7 Reliability: The system will be able to handle any response from the LLM, including invalid responses, without crashing.
+- NFR8 Usability: The system will display accurate error messages to the user in the case of exceptional behavior, such as invalid input or invalid responses from the LLM.
 
 == System Models
 #rect(
@@ -369,7 +330,7 @@ exceptional behavior, such as invalid input or invalid responses from the LLM.
 )[
   Note: This section includes important system models for the requirements analysis.
 ]
-
+In this section of the requirements analysis, we delineate the system models for the project. We commence by elucidating the envisioned scenarios for the system. Subsequently, we present the use case model, analysis object model, dynamic model, and user interface of the system, accompanied by comprehensive diagrams and detailed descriptions.
 === Scenarios
 #rect(
   width: 100%,
@@ -387,12 +348,24 @@ exceptional behavior, such as invalid input or invalid responses from the LLM.
 
   Note: Describe 1-2 demo scenario here, i.e. a scenario that you can implement and demonstrate until the end of your thesis. Use free text description.
 ]
-We will present here two types of scenarios: one visionary scenario and one demo
-scenario. Visionary scenarios are idealized depictions of a future system we strive
-to achieve. Demo scenarios, also called as-is scenarios, are more realistic depictions
-of the system we aim to implement in the scope of this thesis, and can be validated
-by the user [BD09]. Each scenario demonstrates an instance of a use case from
-the perspective of a particular user [BD09].
+As defined by [BD09], a scenario is described as 'a concrete, focused, informal description of a single feature of the system from the viewpoint of a single actor.' A visionary scenario represents an idealized solution to a problem, even if it may not be entirely achievable. In contrast, a demo scenario is one that is feasible, implementable, and can be demonstrated by the conclusion of this thesis. In this section, we will present both a visionary scenario and a demo scenario for our project.
+
+We introduce the scenarios featuring Jane, an editor of a course in Artemis. Jane's objective is to adapt a sorting strategy programming exercise tailored to meet the diverse needs of students with varying levels of experience.
+#rect(
+  width: 100%,
+  radius: 2%,
+  stroke: 0.5pt,
+  fill: gray,
+)[
+Visionary Scenario: Add a Creative Theme and Adjust the Exercise Accordingly
+
+Jane engages in a thoughtful conversation with Iris, expressing a desire to infuse the sorting strategy exercise with a creative and meaningful animal theme so that it would be more accessible to beginners. Iris, demonstrating a keen understanding of the request, meticulously incorporates the animal theme into the problem statement. Further, Iris adeptly adapts the input data structure and tasks to align seamlessly with the chosen theme.
+
+To ensure a harmonious and cohesive experience, Iris meticulously adjusts the code within the template repository, solution repository, and test repository. Each repository undergoes a transformation to mirror the newly introduced animal theme. Notably, the template repository is deliberately configured to encounter failures in all test cases, serving as a challenging starting point for participants. On the contrary, the solution repository is thoughtfully crafted to successfully navigate and pass all tests, providing a rewarding culmination to the adapted exercise. 
+]
+While this scenario presents an idealized representation of the functionality we aspire to achieve, it remains grounded in realism. However, it is crucial to acknowledge that realizing such an advanced level of functionality within the scope of this thesis may be ambitious. Through our exploration, we have identified challenges in relying solely on the LLM, particularly when Iris is granted significant discretionary space for exercise adaptation compared to scenarios with more specific restrictions. This has prompted the need for implementing a guardrail mechanism to ensure that changes made by the LLM align with user approval.
+
+Recognizing the limitations and complexities involved, we set realistic expectations for the LLM's performance and its ability to incorporate continuous feedback. In light of these considerations, we shift our focus towards more achievable functionality and specific scenarios within the confines of this thesis. As an alternative, we propose a scenario that aligns with our practical goals and expectations, aiming to strike a balance between innovation and feasibility.
 
 #rect(
   width: 100%,
@@ -400,39 +373,19 @@ the perspective of a particular user [BD09].
   stroke: 0.5pt,
   fill: gray,
 )[
-Visionary Scenario: Assisted Change of Exercise Tasks
+Demo Scenario: Assisted Change of Specific Exercise Tasks
+
+Jane opens a sorting strategy exercise in the Code Editor page and initiates a conversation with Iris through the Iris chat window. Instead of altering the whole theme, Jane expresses his intent to replace the existing bubble sort algorithm with the insertion sort algorithm while preserving the technical objectives of the exercise for experienced students.
+
+Engaging in a collaborative and creative conversation, Iris discusses the exercise requirements with Jane and suggests a step-by-step plan to seamlessly transition from bubble sort to insertion sort. Jane reviews the proposed plan and approves it, authorizing Iris to proceed with the modifications.
+
+As Iris executes each step of the plan, Jane monitors the progress in the chat window. With every completed step, Jane inspects the corresponding changes in the exercise code. A few minutes into the process, Iris notifies Jane that the exercise is ready for review.
+
+Upon examination, Jane observes that the exercise has undergone a significant transformation, aligning with the insertion sort request. However, he identifies lingering references to the old bubble sort algorithm that require replacement. 
+
+To address these remaining modifications, Jane manually fine-tunes the exercise, replacing residual references to the previous tasks. Once satisfied with the exercise's adaptation to the insertion sort algorithm, Jane publishes the revised exercise for integration into his course.
 ]
-While this scenario is an idealized depiction of the functionality we aim to achieve,
-it is not entirely unrealistic. However, we do not expect to achieve this level of
-functionality in the scope of this thesis, as we have found that we cannot always
-trust the LLM to make the correct changes to the exercise on its own. Therefore,
-we must introduce a guardrail to ensure that the LLM does not make any changes
-that the user does not approve of. Furthermore, we will manage our expectations
-with respect to the LLM’s performance and ability to accept continuous feedback,
-and focus on more realistic functionality in the scope of this thesis. We propose
-the following alternative scenario, which we do aim to achieve in the scope of this
-thesis
-
-#rect(
-  width: 100%,
-  radius: 2%,
-  stroke: 0.5pt,
-  fill: gray,
-)[
-Demo Scenario: Assisted Change of Exercise Tasks
-
-Tom, an instructor using Artemis, opens a sorting strategy exercise in the Code Editor page and initiates a conversation with Iris through the Iris chat window. Instead of altering the theme, Tom expresses his intent to replace the existing bubble sort algorithm with the insertion sort algorithm while preserving the technical objectives of the exercise.
-
-Engaging in a collaborative and creative conversation, Iris discusses the exercise requirements with Tom and suggests a step-by-step plan to seamlessly transition from bubble sort to insertion sort. Tom reviews the proposed plan and approves it, authorizing Iris to proceed with the modifications.
-
-As Iris executes each step of the plan, Tom monitors the progress in the chat window. With every completed step, Tom inspects the corresponding changes in the exercise code. A few minutes into the process, Iris notifies Tom that the exercise is ready for review.
-
-Upon examination, Tom observes that the exercise has undergone a significant transformation, aligning with the insertion sort theme. However, he identifies lingering references to the old bubble sort theme that require replacement. Additionally, Tom identifies a couple of adjustments he'd like to undo.
-
-To address these remaining modifications, Tom manually fine-tunes the exercise, replacing residual references to the previous theme and undoing undesired changes. Once satisfied with the exercise's adaptation to the insertion sort theme, Tom publishes the revised exercise for integration into his course.
-
-This assisted change of exercise tasks demonstrates the collaborative and iterative nature of the Iris system, allowing instructors to dynamically modify exercises with ease while ensuring the seamless integration of new themes or algorithmic approaches into their course content.
-]
+The above scenario is more realistic than the previous one as it provides Iris with more specific instructions. These precise instructions enhance Iris's comprehension and organizational capabilities, providing a fixed endpoint and constraint. Furthermore, users have the capability to monitor the entire process. The execution of the corresponding plan only takes place after users approve Iris's proposed plan, enabling them to closely observe the execution process and subsequently review the changes implemented by Iris.
 === Use Case Model
 #rect(
   width: 100%,
@@ -443,29 +396,22 @@ This assisted change of exercise tasks demonstrates the collaborative and iterat
   Note: This subsection should contain a UML Use Case Diagram including roles and their use cases. You can use colors to indicate priorities. Think about splitting the diagram into multiple ones if you have more than 10 use cases. *Important:* Make sure to describe the most important use cases using the use case table template (./tex/use-case-table.tex). Also describe the rationale of the use case model, i.e. why you modeled it like you show it in the diagram.
 
 ]
-According to Bruegge and Dutoit, use cases describe “a function provided by the
-system that yields a visible result for an actor” [BD09]. In the discussion, the actors will be represented by an editor, an administrator interacting with
-the system Artemis.
+According to Bruegge and Dutoit, use cases are described as 'a function provided by the system that yields a visible result for an actor' [BD09]. In the context of this discussion, the actors are represented by editors interacting with the system Iris.
 
-
-@use-case visually depicts the comprehensive use cases derived directly from the functional requirements outlined in Section 5.3.2. The interactive functionalities of the system enable users to seamlessly communicate with Iris via the dedicated chat window integrated into the Code Editor (FR1.1). This establishes a direct and intuitive channel for users to convey their preferences and receive assistance from Iris.
+The @use-case visually illustrates comprehensive use cases derived directly from the functional requirements outlined in Section 3.3.1. The interactive functionalities of the system empower users to seamlessly communicate with Iris through a dedicated chat window integrated into the Code Editor (FR1). This establishes a direct and intuitive channel for users to convey their requirements and receive assistance from Iris (FR2).
 
 #figure(
-  image("figures/use-case-diagram.jpg", width: 80%),
+  image("figures/use-case-diagram.svg", width: 80%),
   caption: [
     Use case diagram of Iris code editor feature
   ],
 ) <use-case>
 
-Upon receiving a proposed exercise plan from Iris, users are empowered to take decisive actions. Specifically, they can execute the plan (FR1.3), allowing for the systematic implementation of suggested modifications. The flexibility of the system further allows users to exercise control over the process by enabling them to pause and later resume the plan at their convenience (FR1.4). This responsiveness to user needs ensures a dynamic and user-centric experience.
+Upon receiving a proposed exercise plan from Iris, users are empowered to take decisive actions. Specifically, they can review (FR3) and execute the plan (FR5), allowing for the systematic implementation of suggested modifications. The flexibility of the system further allows users to exercise control over the process by enabling them to pause and later resume the plan at their convenience (FR6). This responsiveness to user needs ensures a dynamic and user-centric experience.
 
-Recognizing the iterative nature of exercise planning, users can actively engage with the system by modifying the steps of the proposed plan (FR1.6). This capability promotes a collaborative environment where users can tailor the plan to their specific requirements, fostering a sense of ownership over the adaptation process.
+Recognizing the iterative nature of exercise planning, users can actively engage with the system by modifying the steps of the proposed plan (FR4). This capability promotes a collaborative environment where users can tailor the plan to their specific requirements, fostering a sense of ownership over the adaptation process.
 
-Following the execution of the plan, users can seamlessly verify the applied changes in the exercise (FR1.7). This feature facilitates a transparent and accountable system, allowing users to inspect the outcome of the executed plan and ensure that it aligns with their expectations.
-
-In essence, Figure 9 encapsulates the user-centric functionalities that empower users to interact with Iris in a dynamic and flexible manner. From plan execution to modification and verification, the system's use cases are designed to accommodate the diverse needs of users, ensuring a robust and responsive experience throughout the exercise adaptation process.
-
-
+Following the execution of the plan, users can seamlessly verify the applied changes in the exercise (FR8) or check the error message (FR7) if the execution failed.
 
 === Analysis Object Model
 #rect(
@@ -483,13 +429,13 @@ shown in @analysis-object-model and includes the most important objects, attribu
 and relations of the application domain. 
 
 #figure(
-  image("figures/analysis-object-model.jpg", width: 80%),
+  image("figures/analysis-object-diagram.svg", width: 80%),
   caption: [
     Analysis object model of Iris code editor feature
   ],
 ) <analysis-object-model>
 
-The IrisCodeEditorSession, a key element determined by the programming exercise, encompasses lists of IrisMessage entities dedicated to storing user interactions with Iris within the Code Editor Session. Each IrisMessage can encapsulate lists of IrisMessageContent, a category now expanded to include multiple subtypes. Notably, IrisTextMessageContent represents a straightforward textual message, while IrisExercisePlan denotes a specialized type indicating an exercise plan proposed by Iris. The IrisExercisePlan class is further refined, comprising one to four IrisExercisePlanStep instances.
+The IrisCodeEditorSession which is one of the subtypes of IrisSession, a key element determined by the programming exercise, encompasses lists of IrisMessage entities dedicated to storing user interactions with Iris within the Code Editor Session. Each IrisMessage can encapsulate lists of IrisMessageContent, a category now expanded to include multiple subtypes. Notably, IrisTextMessageContent represents a straightforward textual message, while IrisExercisePlan denotes a specialized type indicating an exercise plan proposed by Iris. The IrisExercisePlan class is further refined, comprising one to four IrisExercisePlanStep instances.
 
 Within the IrisExercisePlanStep, a fundamental unit of the exercise plan, lies an IrisExerciseComponent, signifying either the problem statement or one of the three distinct code repositories. Accompanying this is a set of instructions detailing the required modifications for the associated component. Crucially, an ExecutionStage attribute categorizes each step's current status, indicating whether it is pending, actively being executed, has encountered an error, or has been successfully completed.
 
@@ -505,7 +451,7 @@ This modular and hierarchical structure within the IrisCodeEditorSession facilit
   Note: This subsection should contain dynamic UML diagrams. These can be a UML state diagrams, UML communication diagrams or UML activity diagrams.*Important:* Make sure to describe the diagram and its rationale in the text. *Do not use UML sequence diagrams.*
 ]
 #figure(
-  image("figures/activity-diagram.jpg", width: 80%),
+  image("figures/activity (2).svg", width: 80%),
   caption: [
     Activity diagram of Iris code editor feature
   ],
@@ -535,12 +481,6 @@ Upon completing the exercise modifications, users have the flexibility to submit
 This section presents the user interface for the integration of Iris into the Code Editor.
 
 To enhance accessibility, the Iris button is now prominently positioned in the top right corner of the Code Editor. By clicking this button, users can open the chat window located in the bottom right corner. Figures @editor-day and @editor-night illustrate the Iris button and open chat window in both light and dark themes of the Code Editor Page¹³. An introductory message has been thoughtfully incorporated into the chat window, serving as an invitation for users to initiate a conversation with Iris.
-
-Subsequently, we engaged Iris to replace the BubbleSort sorting algorithm in a sample exercise with the InsertionSort sorting algorithm. Iris, in turn, proposed a comprehensive plan, encompassing a summary presented in plain text and adaptation plans for four key components. Figures @chat and @exercise-plan showcase the initial appearance of the exercise plan in the chat window. Users can expand and review details for each component adaptation plan, as demonstrated in @exercise-plan.
-
-@plan-execution captures the exercise plan in progress, while @plan-complete portrays the UI when the exercise plan is successfully completed. Completed component plans are highlighted in green, the currently executing plan is indicated in yellow, and pending plans retain their original color. The bottom button in the exercise plan message dynamically changes between “Execute,” “Pause,” “Resume,” and “Complete” based on the ongoing execution process.
-
-In the event of an error during the execution of the fourth step, as depicted in @plan-error, the corresponding step is displayed in red, accompanied by an error message. The "Execute" button has been replaced with a "Retry" button, facilitating the re-attempt of plan execution from the beginning of the failed step. This iterative and visually intuitive interface enhances user engagement and provides clear feedback throughout the exercise adaptation process.
 #figure(
   image("figures/code-editor-day.png", width: 80%),
   caption: [
@@ -555,41 +495,48 @@ In the event of an error during the execution of the fourth step, as depicted in
   ],
 ) <editor-night>
 
+Subsequently, we engaged Iris to replace the BubbleSort sorting algorithm in a sample exercise with the InsertionSort sorting algorithm. Iris, in turn, proposed a comprehensive plan, encompassing a summary presented in plain text and adaptation plans for four key components. Figures @chat and @exercise-plan showcase the initial appearance of the exercise plan in the chat window. Users can expand and review details for each component adaptation plan, as demonstrated in @exercise-plan.
 
-
+@plan-execution captures the exercise plan in progress, while @plan-complete portrays the UI when the exercise plan is successfully completed. Completed component plans are highlighted in green, the currently executing plan is indicated in yellow, and pending plans retain their original color. The bottom button in the exercise plan message dynamically changes between “Execute,” “Pause,” “Resume,” and “Complete” based on the ongoing execution process.
 #figure(
-  image("figures/chat.png", width: 80%),
+  image("figures/chat.png", width: 60%),
   caption: [
     Chat between user and Iris
   ],
 ) <chat>
 
 #figure(
-  image("figures/exercise-plan.png", width: 80%),
+  image("figures/exercise-plan.png", width: 90%),
   caption: [
     Exercise plan proposed by Iris
   ],
 ) <exercise-plan>
+In the event of an error during the execution of the fourth step, as depicted in @plan-error, the corresponding step is displayed in red, accompanied by an error message. The "Execute" button has been replaced with a "Retry" button, facilitating the re-attempt of plan execution from the beginning of the failed step. This iterative and visually intuitive interface enhances user engagement and provides clear feedback throughout the exercise adaptation process.
 
-#figure(
-  image("figures/plan-execution.png", width: 80%),
-  caption: [
-    Executing exercise plan
-  ],
-) <plan-execution>
-#figure(
-  image("figures/plan-complete.png", width: 80%),
-  caption: [
-    Exercise plan execution completed
-  ],
-) <plan-complete>
 
-#figure(
-  image("figures/plan-error.png", width: 80%),
-  caption: [
-    An error occured during the execution of the exercise plan
-  ],
-) <plan-error>
+#grid(columns: 3)[
+  #figure(
+    image("figures/plan-execution.png"),
+    caption: [
+      Executing exercise plan
+    ],
+  ) <plan-execution>
+][
+  #figure(
+    image("figures/plan-complete.png", width: 92%),
+    caption: [
+      Exercise plan execution completed
+    ],
+  ) <plan-complete>
+
+][
+  #figure(
+    image("figures/plan-error.png", width: 93%),
+    caption: [
+      An error occured during the execution
+    ],
+  ) <plan-error>
+]
 
 @bubble depicts the original exercise, and upon the execution of the exercise plan, the resulting changes seamlessly integrate into the Code Editor, as illustrated in @insertion. The status indicator, highlighted in @insertion, appropriately displays "unsubmitted," serving as a clear indication of the newly implemented modifications suggested by Iris. Users can thoroughly review and verify these changes at their convenience, ensuring a transparent and user-friendly experience.
 #figure(
@@ -615,7 +562,7 @@ In the event of an error during the execution of the fourth step, as depicted in
 )[
   Note: This chapter follows the System Design Document Template in @bruegge2004object. You describe in this chapter how you map the concepts of the application domain to the solution domain. Some sections are optional, if they do not apply to your problem. Cite @bruegge2004object several times in this chapter.
 ]
-In this section, we will discuss design decisions made in the implementation of the Iris integration into the Code Editor.
+In this section, we will discuss design decisions made in the implementation of the Iris Code Editor project.
 
 == Overview
 #rect(
@@ -631,7 +578,7 @@ Our exploration commences with a detailed examination of the decision-making pro
 Following this, our focus shifts to the intricate lower-level methods employed in the generation and application of changes by the Language Model Manager (LLM) to the exercise. This phase is integral to the dynamic adaptability of our system, encompassing the fine-grained details of how the LLM orchestrates modifications, ensuring precision and coherence with the overarching goals of the exercise adaptation process. We will unravel the intricacies of this transformative process, shedding light on the mechanisms that underpin the seamless integration of changes proposed by the LLM into the exercise structure.
 
 == Prototype Design
-Prototype 1 focuses on the crucial aspect of exercise adaptation—adjusting the difficulty level—addressing the high-demand needs inherent in adaptive learning. When tailoring programming exercises to be more accessible than the basic level, our approach involves breaking down the task into detailed steps and providing comprehensive guidance. By furnishing explicit instructions and supplementary explanations, learners gain a deeper understanding of the problem, enhancing their foundational skills.
+*Prototype 1* focuses on the crucial aspect of exercise adaptation—adjusting the difficulty level—addressing the high-demand needs inherent in adaptive learning. When tailoring programming exercises to be more accessible than the basic level, our approach involves breaking down the task into detailed steps and providing comprehensive guidance. By furnishing explicit instructions and supplementary explanations, learners gain a deeper understanding of the problem, enhancing their foundational skills.
 
 Conversely, elevating the difficulty level of programming exercises demands a distinct strategy. Here, we streamline the task description, amalgamate multiple tasks into a more intricate problem, and reduce the pre-written code in the template. This reduction in scaffolding and guidance encourages advanced learners to apply their knowledge creatively, fostering a deeper engagement with the material.
 
@@ -653,7 +600,7 @@ The user interface (UI) design caters to the seamless integration of the adaptiv
   ],
 ) <generate-variant>
 
-Prototype 2 is strategically designed to enhance the versatility and scalability of the project by expanding its scope to handle a broader array of adaptation requests.
+*Prototype 2* is strategically designed to enhance the versatility and scalability of the project by expanding its scope to handle a broader array of adaptation requests.
 
 In this iteration, we adopt a more generalized approach, refraining from the inclusion of specific instructions regarding how to adapt to more challenging exercises. Instead, the Language Model Manager (LLM) is empowered to analyze the user's adaptation requests independently and determine the most effective means of fulfilling these requests. This adaptive functionality necessitates a dynamic interaction model where the LLM engages in a conversation with the user, seeking clarification on the request and subsequently generating a corresponding adaptation plan for the exercise.
 
@@ -673,24 +620,31 @@ Upon comparing the two prototypes, Prototype One's design closely aligns with a 
 
 
 #figure(
-  image("figures/chat-window-dark.png", width: 80%),
+  image("figures/chat-window-dark.png", width: 60%),
   caption: [
     The Iris chat window UI
   ],
 ) <chat-window>
 
 
-== Generate and Apply changes
-I. Rewriting or patching
+== Apply changes
+Firstly, it is important to note that, considering user experience and the precision of changes introduced by Iris, changes will not be automatically saved in the database. Instead, they will be displayed in the online code editor for the user to review. Only upon user approval will the changes be saved by submitting the code and saving the problem statement to update the database.
 
-II. excute entire plan VS. execute step
+We proposed two approaches to inject exercise changes into the corresponding part of Artemis.
 
-1. apply into client side, ace-editor 
-read status and send to  server, inject changes, not commit to git
-2. apply into server, without committing to git
+*Inject Changes into Client-Side:* This involves the online code editor, comprising an Ace editor for three code repositories editing and a Markdown editor for problem statement editing. The status of the target file should be checked before any other actions. If the target file is in fileSession, changes can be edited directly, meaning the target changes can be injected. If it's not included in the fileSession, it needs to be included first before injecting the changes.
 
+The advantage is that we can always include the current status of the editor, encompassing the latest content of the exercise - content changed by the user but not yet submitted or the initial content of the exercise saved in the database if there are no user-initiated changes. This allows Iris to keep track of the exercise's latest status and generate the corresponding response and exercise plan. 
 
-For Iris creation page, include new UI into design descisions
+The disadvantage is that, since the editor has not been maintained for a long time, potential problems may arise when adding new functions. Additionally, as the editor function is a core function of Artemis, it has wide coverage, and the code composition is relatively complex. Moreover, the editor parameters bound to the three code repositories are different, making it challenging to manage the three code repositories with a common function. Although we were able to successfully inject changes, the robustness was not optimal, and occasional problems occurred.
+
+*Inject Changes into Server-Side:* The related repository services on the server define all methods for interactions between Artemis and programming exercise repositories. One method is responsible for managing the unsaved changes of the programming exercise. We can simply checkout the target file content using the corresponding repository URL and file name, and write the new changes into it without committing to Git and saving into the database.
+
+The advantage is that the implementation is simpler than the client-side and more robust. 
+
+The disadvantage is that it's difficult to obtain the unsaved changes of the repository during the execution of the plan and send it to LLM, as we don't want to save the changes into the repository directly before user approval. Therefore, a new storage approach is needed to save the latest content of the repository to send to LLM during the execution of the plan.
+
+Considering the performance and robustness of the project, we decided to implement the second approach. However, due to time constraints, we did not achieve the new storage method. It will be included in future work.
 
 == Subsytem Decomposition
 #rect(
@@ -701,11 +655,11 @@ For Iris creation page, include new UI into design descisions
 )[
   Note: Describe the architecture of your system by decomposing it into subsys- tems and the services provided by each subsystem. Use UML class diagrams including packages / components for each subsystem.
 ]
-As an integral subsystem of Artemis, Iris plays a pivotal role in enhancing the overall user experience by meticulously analyzing exercises and user requests to generate highly-targeted suggestions. Functioning in harmony with two other essential subsystems—namely, the Git service, responsible for managing the code repositories of the programming exercises, and Pyris, which acts as the intermediary for user requests and responses from the Language Model (LLM)—Iris forms a dynamic trio to empower Artemis with advanced capabilities.
+As an integral subsystem of Artemis, Iris plays a pivotal role in enhancing the overall user experience by meticulously analyzing exercises and user requests to generate highly-targeted suggestions. Functioning in harmony with two other essential subsystems—namely, the Git service, responsible for managing the code repositories of the programming exercises, and Pyris, which acts as the intermediary for user requests and responses from the LLM—Iris forms a dynamic trio to empower Artemis with advanced capabilities.
 
-The Git service ensures seamless access to a comprehensive array of programming exercises, fostering a diverse and engaging learning environment. Meanwhile, Pyris acts as the communication bridge between users and the Language Model, efficiently handling requests and relaying responses in a timely manner.
+The Git service ensures seamless access to a comprehensive array of programming exercises, fostering a diverse and engaging learning environment. Meanwhile, Pyris acts as the communication bridge between Artemis and the LLM, efficiently handling requests and relaying responses in a timely manner.
 
-This intricate network of subsystems communicates seamlessly, as illustrated in Figure <subsystem-component>, with the exchange facilitated through dedicated APIs and employing the versatile REST interface and websocket service. The utilization of JSON serialization further streamlines the data exchange process, ensuring efficiency and compatibility across all components. This collaborative approach enables Artemis to deliver a sophisticated and responsive platform, seamlessly integrating Iris's analytical prowess with the expansive exercise repositories managed by the Git service and the dynamic communication capabilities of Pyris.
+This intricate network of subsystems communicates seamlessly, as illustrated in <subsystem-component>, with the exchange facilitated through dedicated APIs and employing the versatile REST interface and websocket service. The utilization of JSON serialization further streamlines the data exchange process, ensuring efficiency and compatibility across all components. This collaborative approach enables Artemis to deliver a sophisticated and responsive platform, seamlessly integrating Iris's analytical prowess with the expansive exercise repositories managed by the Git service and the dynamic communication capabilities of Pyris.
 
 #figure(
   image("figures/subsystem.svg", width: 80%),
@@ -716,9 +670,9 @@ Artemis and Pyris
 ) <subsystem-component>
 
 === Artemis Server
-The Artemis Server, meticulously crafted using Java and Spring Boot, stands as a cornerstone in the endeavors discussed within this thesis. Iris, a pivotal subsystem, is integrated into the Code Editor as an Iris code editor session, observed within the Code Editor component, as exemplified in @server-component. For seamless user interaction, the message resource and session resource expose pertinent REST endpoints, allowing users to perform actions such as creating a code editor session and communicating with Iris (FR1.1), as well as executing individual steps of an exercise plan (FR1.3).
+The Artemis Server, meticulously crafted using Java and Spring Boot, stands as a cornerstone in the endeavors discussed within this thesis. Iris, a pivotal subsystem, is integrated into the Code Editor and uses Iris code editor session to manage the interactions between Code Editor and Iris, observed within the Code Editor component, as exemplified in @server-component. For seamless user interaction, the message resource and session resource expose pertinent REST endpoints, allowing users to perform actions such as creating a code editor session and communicating with Iris (FR1), as well as executing individual steps of an exercise plan (FR5).
 
-@server-class offers a static structural overview of the server classes related to the IrisCodeEditorSessionService, a critical class for Iris Chatbot functionality, presented as a UML class diagram. The IrisCodeEditorSessionService relies on the IrisSettingsService to fetch the currently configured guidance template for the course in which the user is engaged. It further utilizes repository classes to locate and validate sessions and messages. Message storage is facilitated by the IrisMessageService, while communication with Pyris is managed through the IrisConnectorService to obtain a response from the Language Model Manager (LLM). This response is parsed and subsequently relayed to the user via the IrisWebsocketService. This intricate interplay of services underscores the comprehensive functionality of the Artemis Server, particularly in the context of Iris and its dynamic integration within the Code Editor.
+@server-class offers a static structural overview of the server classes related to the IrisCodeEditorSessionService, a critical class for Iris Chatbot functionality, presented as a UML class diagram. The IrisCodeEditorSessionService relies on the IrisSettingsService to fetch the currently configured guidance template for the course in which the user is engaged. It further utilizes repository classes to locate and validate sessions, messages and exercise plan steps. Message storage is facilitated by the IrisMessageService, while communication with Pyris is managed through the IrisConnectorService to obtain a response from LLM. This response is parsed and subsequently relayed to the user via the IrisWebsocketService. This intricate interplay of services underscores the comprehensive functionality of the Artemis Server, particularly in the context of Iris and its dynamic integration within the Code Editor.
 
 #figure(
   image("figures/artemis-server.svg", width: 80%),
@@ -734,11 +688,11 @@ The Artemis Server, meticulously crafted using Java and Spring Boot, stands as a
 ) <server-class>
 
 === Artemis Client
-@client-class provides insight into the static structure of client classes involved in the integration of Iris into the Code Editor.
+@client-class provides insight into the static structure of client classes involved in the Iris Code Editor project.
 
 The client-side IrisCodeEditorWebsocketService plays a pivotal role in receiving messages from the server through a WebSocket connection, subsequently exposing them via an observable stream. The CodeEditorInstructorAndEditorContainerComponent, representing the Code Editor, subscribes to this stream. Beyond message handling, this component, assisted by the ProfileService and IrisSettingsService, ensures that Iris is enabled both in Artemis and the current course. It selectively displays the Iris button and chat window only if these conditions are met.
 
-The CodeEditorInstructorAndEditorContainerComponent then forwards WebSocket messages to the IrisChatbotWidgetComponent for presentation to the user. Importantly, the IrisChatbotWidgetComponent possesses the capability to send message requests to the server through the IrisHttpCodeEditorMessageService, with these requests being received by the IrisCodeEditorMessageResource. This intricate interplay of client classes ensures a seamless and responsive integration of Iris features within the Code Editor environment.
+The CodeEditorInstructorAndEditorContainerComponent then forwards WebSocket messages to the IrisChatbotWidgetComponent via IrisCodeEditorChatbotButtonComponent for presentation to the user. Importantly, the IrisChatbotWidgetComponent possesses the capability to send message requests to the server through the IrisHttpCodeEditorMessageService, with these requests being received by the IrisCodeEditorMessageResource. In the meanwhile, IrisStateStore keeps track on the status of the session and stores the messages continuously. This intricate interplay of client classes ensures a seamless and responsive integration of Iris features within the Code Editor component.
 
 #figure(
   image("figures/client-class.svg", width: 80%),
@@ -768,16 +722,6 @@ In essence, these adaptations in Pyris underscore our commitment to tailoring th
   Note: This section describes how the subsystems are mapped onto existing hardware and software components. The description is accompanied by a UML deployment diagram. The existing components are often off-the-shelf components. If the components are distributed on different nodes, the network infrastructure and the protocols are also described.
 ]
 
-== Persistent Data Management
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Optional section that describes how data is saved over the lifetime of the system and which data. Usually this is either done by saving data in structured files or in databases. If this is applicable for the thesis, describe the approach for persisting data here and show a UML class diagram how the entity objects are mapped to persistent storage. It contains a rationale of the selected storage scheme, file system or database, a description of the selected database and database administration issues.
-]
-
 == Access Control
 #rect(
   width: 100%,
@@ -788,25 +732,6 @@ In essence, these adaptations in Pyris underscore our commitment to tailoring th
   Note: Optional section describing the access control and security issues based on the nonfunctional requirements in the requirements analysis. It also de- scribes the implementation of the access matrix based on capabilities or access control lists, the selection of authentication mechanisms and the use of en- cryption algorithms.
 ]
 
-== Global Software Control
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Optional section describing the control flow of the system, in particular, whether a monolithic, event-driven control flow or concurrent processes have been selected, how requests are initiated and specific synchronization issues
-]
-
-== Boundry Conditions
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Optional section describing the use cases how to start up the separate components of the system, how to shut them down, and what to do if a component or the system fails.
-]
 
 = Evaluation
 #rect(
@@ -842,20 +767,22 @@ We conducted a series of two experiments to comprehensively assess its capabilit
 
 We introduced a new programming exercise titled "Searching with the Strategy Pattern," instead of the existing one which we used for optimizing our prompt template to enhance result reliability. And given the stringent requirements with a fixed endpoint makes it easier to measure the performance. The procedure is as follows:
 
-1. *Task:* Participants will be challenged to replace an existing search algorithm with another one in the programming exercise. The modifications should be implemented across all four components of the exercise.
-2. *Control Group:* Participants in the control group will perform the adaptation manually, adhering to the standard procedure.
-3. *Experimental Group:* Participants in the experimental group will use Iris to facilitate the adaptation process.
-4. *Objective:* The primary objective is to comprehensively evaluate Iris's performance concerning both functional and non-functional requirements. This experiment aims to cover all functions of Iris related to algorithm replacement.
+1. *Task:* Participants will be tasked with replacing one searching algorithm with another within the programming exercise. The modifications should be implemented across all four components of the exercise.
+2. *Objective:* The primary objective is to comprehensively evaluate Iris's performance concerning both functional and non-functional requirements. This experiment aims to cover all functions of Iris related to algorithm replacement.
 
+=== Experiment 2: Making an Exercise Harder
 
-=== Experiment 2: Adding a Creative Theme
+A new programming exercise is presented, tailored to serve as an accessible starting point. The task at hand involves the deliberate removal of pre-filled code snippets from the template repository. To elevate the complexity of the exercise, additional tasks are introduced, compelling students to re-implement the removed code. The procedure is as follows:
+
+1. *Tasks:* Given an exercise that is currently easy, participants will make it harder by removing some of the prefilled code in the template.
+2. *Objective:* To test if Iris can understand that making an exericse harder can be achieved by adding more tasks and thereby removing some of the template code.
+
+=== Experiment 3: Adding a Creative Theme
 
 A new programming exercise devoid of background description and a meaningful theme, but comprising only coding tasks, was used. The challenge was to introduce a creative theme and adjust the exercise accordingly to enhance student engagement. The procedure is as follows:
 
 1. *Task:* Participants will add a creative theme to the programming exercise, enhancing its appeal and comprehensibility for students.
-2. *Control Group:* Participants in the control group will manually introduce the creative theme, following their typical approach.
-3. *Experimental Group:* Participants in the experimental group will leverage Iris to assist in incorporating the creative theme.
-4. *Objective:* The primary goal is to showcase Iris's proficiency in assisting humans with creative ideation in programming exercise design. Furthermore, given the experiment's flexible scenario that permits Iris to showcase adaptability without stringent requirements, another goal is to assess Iris's performance in creatively adapting exercises within a less constrained environment. This emphasizes Iris's ability to generate inventive ideas and adapt exercises with diverse themes.
+2. *Objective:* The primary goal is to showcase Iris's proficiency in assisting humans with creative ideation in programming exercise design. Furthermore, given the experiment's flexible scenario that permits Iris to showcase adaptability without stringent requirements, another goal is to assess Iris's performance in creatively adapting exercises within a less constrained environment. This emphasizes Iris's ability to generate inventive ideas and adapt exercises with diverse themes.
 
 === Survey
 We have designed a survey to gather valuable feedback from our evaluators. Following each experiment, we will ask them if agree with the following statement:
@@ -867,10 +794,14 @@ We have designed a survey to gather valuable feedback from our evaluators. Follo
 
 After completing the three experiments, participants will be presented with the following survey for evaluation. Each statement in the survey offers five response options, allowing raters to indicate their level of agreement.
 
-- Iris chat user interface is easy to use
-- Iris can help save a lot of time when adapting programming exercises
-- I would prefer Iris than other AI tools like chatgpt to adapt the programming exercise
-- My overall satisfaction with Iris is high
+- Iris assistance in programming exercise creation is helpful to me
+- It takes less time to adapt a programming exercise with Iris
+- Iris is especially useful to 
+    - apply changes to the exercise content
+    - change the exercise complexity
+    - change the exercise theme
+- I prefer Iris over ChatGPT to adapt the programming exercise
+- Iris' potential to improve the exercise creation process is high
 
 In addition to the ratings, we let evaluators record as the whole process. This practice will enhance our ability to analyze the accuracy and effectiveness of the system.
 
@@ -925,6 +856,8 @@ bias
   Note: This chapter includes the status of your thesis, a conclusion and an outlook about future work.
 ]
 
+In the subsequent sections, we delve into the current state of the thesis, highlight key conclusions, and explore potential avenues for future research.
+
 == Status
 #rect(
   width: 100%,
@@ -934,6 +867,27 @@ bias
 )[
   Note: Describe honestly the achieved goals (e.g. the well implemented and tested use cases) and the open goals here. if you only have achieved goals, you did something wrong in your analysis.
 ]
+
+#let open = circle(
+  radius: 0.3em,
+  fill: white,
+  stroke: black,
+) 
+
+#let partial-g = circle(
+  radius: 0.5em,
+  fill: gradient.linear((black, 0%), (white, 70%), (white, 100%)),
+  stroke: black,
+)
+
+#let fulfilled-g = circle(
+  radius: 0.5em,
+  fill: black,
+  stroke: black,
+)
+Tables 8.1 provides a comprehensive overview of the status of functional requirements of the project. Each functional requirement is labeled as (fulfill-g) for realized, partial-g for partially realized, and #open for not realized. Further details on realized goals and ongoing objectives are discussed in the subsequent sections.
+
+
 
 === Realized Goals
 #rect(

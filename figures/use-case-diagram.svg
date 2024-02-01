@@ -1,0 +1,44 @@
+<svg width="841" height="471" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff"><defs><style>
+  text {
+    fill: #212529;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+  }
+
+  marker, text {
+    fill-opacity: 1;
+  }
+
+  * {
+    overflow: visible;
+  }
+</style></defs><svg x="15" y="165" width="80" height="140" class="Editor" fill="#ffffff"><g><rect width="100%" height="100%" fill="none"></rect><g stroke="black" stroke-width="2"><circle cx="40" cy="25" r="15" stroke="black" fill="white" class="sc-iGgWBj fYmGgq"></circle><line x1="40" y1="40" x2="40" y2="80" stroke="black" class="sc-imWYAI kESMEa"></line><line x1="10" y1="50" x2="70" y2="50" stroke="black" class="sc-imWYAI kESMEa"></line><line x1="40" y1="80" x2="10" y2="110" stroke="black" class="sc-imWYAI kESMEa"></line><line x1="40" y1="80" x2="70" y2="110" stroke="black" class="sc-imWYAI kESMEa"></line></g><text x="40" y="130" dominant-baseline="middle" text-anchor="middle" font-weight="bold" pointer-events="none">Editor</text></g></svg><svg x="185" y="15" width="640" height="440" class="Iris" fill="#ffffff"><g><rect width="100%" height="100%" stroke="black" fill="white" class="sc-fqkvVR uHYUy"></rect><text x="50%" y="16" dominant-baseline="middle" text-anchor="middle" font-weight="bold" pointer-events="none">Iris</text></g></svg><svg x="235" y="185" width="200" height="100" class="Receive exercise plan" fill="#ffffff"><g><ellipse cx="50%" cy="50%" rx="50%" ry="50%" stroke="black" fill="white" class="sc-kAyceB ldFMTf"></ellipse><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-weight="bold" pointer-events="none">Receive exercise plan</text></g></svg><svg x="235" y="335" width="200" height="100" class="Execute exercise plan" fill="#ffffff"><g><ellipse cx="50%" cy="50%" rx="50%" ry="50%" stroke="black" fill="white" class="sc-kAyceB ldFMTf"></ellipse><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-weight="bold" pointer-events="none">Execute exercise plan</text></g></svg><svg x="235" y="45" width="200" height="100" class="Chat with Iris" fill="#ffffff"><g><ellipse cx="50%" cy="50%" rx="50%" ry="50%" stroke="black" fill="white" class="sc-kAyceB ldFMTf"></ellipse><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-weight="bold" pointer-events="none">Chat with Iris</text></g></svg><svg x="615" y="335" width="200" height="100" class="Pause exercise plan" fill="#ffffff"><g><ellipse cx="50%" cy="50%" rx="50%" ry="50%" stroke="black" fill="white" class="sc-kAyceB ldFMTf"></ellipse><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-weight="bold" pointer-events="none">Pause exercise plan</text></g></svg><svg x="605" y="185" width="200" height="100" class="Modify exercise plan" fill="#ffffff"><g><ellipse cx="50%" cy="50%" rx="50%" ry="50%" stroke="black" fill="white" class="sc-kAyceB ldFMTf"></ellipse><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-weight="bold" pointer-events="none">Modify exercise plan</text></g></svg><svg x="435" y="385" width="180" height="1" class="" fill="#ffffff"><g><g><marker id="marker-e791b9cb-3221-4a69-9cb1-bf2ee3217e15" viewBox="0 0 30 30" markerWidth="22" markerHeight="30" refX="30" refY="15" orient="auto" markerUnits="strokeWidth"><path d="M0,29 L30,15 L0,1" stroke="black" fill="none" class="sc-gEvEer bFSwyf"></path></marker><path d="
+          M 180 0 L 130 0
+          M 50 0 L 0 0
+        " stroke-dasharray="7" marker-end="url(#marker-e791b9cb-3221-4a69-9cb1-bf2ee3217e15)" stroke="black" fill="white" class="sc-gEvEer fkqzOi"></path></g><path id="textpath-e791b9cb-3221-4a69-9cb1-bf2ee3217e15" d="
+          M 130 0
+          L 50 0
+        "></path><text dominant-baseline="middle" text-anchor="middle" font-weight="bold" pointer-events="none" transform="
+              translate(90, 0)
+              rotate(180)
+              translate(-90, 0)
+            "><textPath xlink:href="#textpath-e791b9cb-3221-4a69-9cb1-bf2ee3217e15" startOffset="50%">«extend»</textPath></text></g></svg><svg x="435" y="235" width="170" height="1" class="" fill="#ffffff"><g><g><marker id="marker-8a43678d-dfc8-4969-8a69-4b3756324c4a" viewBox="0 0 30 30" markerWidth="22" markerHeight="30" refX="30" refY="15" orient="auto" markerUnits="strokeWidth"><path d="M0,29 L30,15 L0,1" stroke="black" fill="none" class="sc-gEvEer bFSwyf"></path></marker><path d="
+          M 170 0 L 125 0
+          M 45 0 L 0 0
+        " stroke-dasharray="7" marker-end="url(#marker-8a43678d-dfc8-4969-8a69-4b3756324c4a)" stroke="black" fill="white" class="sc-gEvEer fkqzOi"></path></g><path id="textpath-8a43678d-dfc8-4969-8a69-4b3756324c4a" d="
+          M 125 0
+          L 45 0
+        "></path><text dominant-baseline="middle" text-anchor="middle" font-weight="bold" pointer-events="none" transform="
+              translate(85, 0)
+              rotate(180)
+              translate(-85, 0)
+            "><textPath xlink:href="#textpath-8a43678d-dfc8-4969-8a69-4b3756324c4a" startOffset="50%">«extend»</textPath></text></g></svg><svg x="95" y="95" width="140" height="140" class="" fill="#ffffff"><g><path id="textpath-73e039ca-8e32-429f-8a66-e66bca8df295" d="
+        M 0 130
+        L 140 -10
+    "></path><text dominant-baseline="middle" text-anchor="middle" font-weight="bold" pointer-events="none" dy="20px"><textPath xlink:href="#textpath-73e039ca-8e32-429f-8a66-e66bca8df295" startOffset="50%"></textPath></text><polyline points="0 140,140 0" stroke-width="1" stroke="black" fill="none" class="sc-aXZVg eMElBf"></polyline></g></svg><svg x="95" y="235" width="140" height="1" class="" fill="#ffffff"><g><path id="textpath-8f9b08d2-aaf5-438b-a7cd-3c45347ba90b" d="
+        M 0 -10
+        L 140 -10
+    "></path><text dominant-baseline="middle" text-anchor="middle" font-weight="bold" pointer-events="none" dy="20px"><textPath xlink:href="#textpath-8f9b08d2-aaf5-438b-a7cd-3c45347ba90b" startOffset="50%"></textPath></text><polyline points="0 0,140 0" stroke-width="1" stroke="black" fill="none" class="sc-aXZVg eMElBf"></polyline></g></svg><svg x="95" y="235" width="140" height="150" class="" fill="#ffffff"><g><path id="textpath-d571a3be-e7a4-4b33-bfd6-82338b9f5f81" d="
+        M 0 -10
+        L 140 140
+    "></path><text dominant-baseline="middle" text-anchor="middle" font-weight="bold" pointer-events="none" dy="20px"><textPath xlink:href="#textpath-d571a3be-e7a4-4b33-bfd6-82338b9f5f81" startOffset="50%"></textPath></text><polyline points="0 0,140 150" stroke-width="1" stroke="black" fill="none" class="sc-aXZVg eMElBf"></polyline></g></svg></svg>
