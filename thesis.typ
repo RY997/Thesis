@@ -113,22 +113,17 @@ learning journey, fostering their skill development and facilitating continuous
 growth [Abe22].
 
 == Objectives
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Split to bullet points, more clear and general.
-]
 
-The rapid advancement of Artificial Intelligence (AI), especially Generative
-Pre-trained Transformer (GPT) models, presents a unique opportunity to
-enhance the domain of computer science education [KSK+23]. In this master
-thesis, we will harness the power of Large Language Model (LLM) to generate
-adaptive programming exercises. This approach allows us to create exercises
-that are specifically tailored to the learning objectives and skill levels of
-students.
+The rapid advancement of Artificial Intelligence (AI), particularly Generative Pre-trained Transformer (GPT) models, presents a unique opportunity to revolutionize the field of computer science education [KSK+23]. In this master's thesis, our objective is to harness the capabilities of Large Language Models (LLMs) to create adaptive programming exercises. This innovative approach allows us to customize exercises precisely to meet the individual learning objectives and proficiency levels of students. To achieve this overarching goal, we have identified the following specific sub-goals:
+
+- *Intelligent Exercise Planning*
+Our first aim is to develop a chatbot named Iris, leveraging LLM technology. Iris will engage in dialogue with users to gain a comprehensive understanding of their needs and propose tailored exercise adaptation plans. These plans will be intelligently crafted to include adaptation strategies for the involved exercise components, enhancing feasibility and implementability.
+
+- *Dynamic Exercise Execution*
+Our next objective is to enable LLMs to execute exercise plans seamlessly. By passing each component adaptation plan along with the current content of the corresponding component, we allow LLMs to generate the required changes based on these plans. To maintain consistency between components, this process follows a linear trajectory. Once the adaptation plan for one component is executed, the next component's adaptation plan and content are forwarded.
+
+- *Automated Exercise Application*
+Lastly, we seamlessly integrate exercise changes into the existing system, Artemis. This integration necessitates the analysis and accurate application of changes generated through Iris to the corresponding parts of the relevant components. By automating this process, we streamline exercise modifications, easing the burden on users and enhancing overall efficiency.
 
 == Outline
 
@@ -188,17 +183,8 @@ While seamlessly integrated into Artemis, Iris also includes a standalone compon
 In this section, we will define the formal requirements for the AI assistant integrated into the Code Editor. To provide context, we will begin by introducing the current system and our proposed system then explore a series of scenarios that illustrate the envisioned utilization of Iris within the Code Editor. Subsequently, we will delineate a comprehensive list of functional requirements and non-functional requirements. Finally, we will present our system model.
 
 == Current System
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  current approach to adapt a programming exercise → manually
-
-]  
   
-  The entirety of the programming exercise demands manual adaptation either through the online Code Editor or within a local Integrated Development Environment (IDE). It is crucial to acknowledge that the feature set of the online code editor might not be as extensive as that of a local IDE. However, opting for a local IDE involves additional configuration efforts and the necessity to clone the repository for each exercise.
+The entirety of the programming exercise demands manual adaptation either through the online Code Editor or within a local Integrated Development Environment (IDE). It is crucial to acknowledge that the feature set of the online code editor might not be as extensive as that of a local IDE. However, opting for a local IDE involves additional configuration efforts and the necessity to clone the repository for each exercise.
 
 == Proposed System
 
@@ -222,7 +208,7 @@ Functional requirements stand independent of implementation details, specificall
 - FR10 Undo changes: The user will be able to undo Iris' changes to the exercise.
 
 === Nonfunctional Requirements
-
+Nonfunctional requirements shed light on the aspects of a system that are not directly related to its functionality [BD09].
 
 - NFR1 Functionality: The changes made by the LLM to the exercise will be accurate and relevant to the user’s input and the context of the exercise.
 - NFR2 Usability: The chat window will be minimizable and resizeable with a single click or drag respectively.
@@ -253,9 +239,7 @@ Jane engages in a thoughtful conversation with Iris, expressing a desire to infu
 
 To ensure a harmonious and cohesive experience, Iris meticulously adjusts the code within the template repository, solution repository, and test repository. Each repository undergoes a transformation to mirror the newly introduced animal theme. Notably, the template repository is deliberately configured to encounter failures in all test cases, serving as a challenging starting point for participants. On the contrary, the solution repository is thoughtfully crafted to successfully navigate and pass all tests, providing a rewarding culmination to the adapted exercise. 
 ]
-While this scenario presents an idealized representation of the functionality we aspire to achieve, it remains grounded in realism. However, it is crucial to acknowledge that realizing such an advanced level of functionality within the scope of this thesis may be ambitious. Through our exploration, we have identified challenges in relying solely on the LLM, particularly when Iris is granted significant discretionary space for exercise adaptation compared to scenarios with more specific restrictions. This has prompted the need for implementing a guardrail mechanism to ensure that changes made by the LLM align with user approval.
-
-Recognizing the limitations and complexities involved, we set realistic expectations for the LLM's performance and its ability to incorporate continuous feedback. In light of these considerations, we shift our focus towards more achievable functionality and specific scenarios within the confines of this thesis. As an alternative, we propose a scenario that aligns with our practical goals and expectations, aiming to strike a balance between innovation and feasibility.
+While this visionary scenario presents an idealized representation of the functionality we aspire to achieve, it remains grounded in realism. However, it is crucial to acknowledge that realizing such an advanced level of functionality within the scope of this thesis may be ambitious. Through our exploration, we have identified challenges in relying solely on the LLM, particularly when Iris is granted significant discretionary space for exercise adaptation compared to scenarios with more specific restrictions. This has prompted the need for implementing a guardrail mechanism to ensure that changes made by the LLM align with user approval.
 
 #rect(
   width: 100%,
@@ -275,7 +259,10 @@ Upon examination, Jane observes that the exercise has undergone a significant tr
 
 To address these remaining modifications, Jane manually fine-tunes the exercise, replacing residual references to the previous tasks. Once satisfied with the exercise's adaptation to the insertion sort algorithm, Jane publishes the revised exercise for integration into his course.
 ]
-The above scenario is more realistic than the previous one as it provides Iris with more specific instructions. These precise instructions enhance Iris's comprehension and organizational capabilities, providing a fixed endpoint and constraint. Furthermore, users have the capability to monitor the entire process. The execution of the corresponding plan only takes place after users approve Iris's proposed plan, enabling them to closely observe the execution process and subsequently review the changes implemented by Iris.
+
+Recognizing the limitations and complexities involved, we set realistic expectations for the LLM's performance and its ability to incorporate continuous feedback. In light of these considerations, we shift our focus towards more achievable functionality and specific scenarios within the confines of this thesis. As an alternative, we propose a demo scenario that aligns with our practical goals and expectations, aiming to strike a balance between innovation and feasibility.
+
+The demo scenario is more realistic than the previous one as it provides Iris with more specific instructions. These precise instructions enhance Iris's comprehension and organizational capabilities, providing a fixed endpoint and constraint. Furthermore, users have the capability to monitor the entire process. The execution of the corresponding plan only takes place after users approve Iris's proposed plan, enabling them to closely observe the execution process and subsequently review the changes implemented by Iris.
 === Use Case Model
 
 According to Bruegge and Dutoit, use cases are described as 'a function provided by the system that yields a visible result for an actor' [BD09]. In the context of this discussion, the actors are represented by editors interacting with the system Iris.
@@ -318,7 +305,7 @@ This modular and hierarchical structure within the IrisCodeEditorSession facilit
 === Dynamic Model
 
 #figure(
-  image("figures/activity (2).svg", width: 80%),
+  image("figures/activity.png", width: 80%),
   caption: [
     Activity diagram of Iris code editor feature
   ],
@@ -515,7 +502,7 @@ The Artemis Server, meticulously crafted using Java and Spring Boot, stands as a
 @server-class offers a static structural overview of the server classes related to the IrisCodeEditorSessionService, a critical class for Iris Chatbot functionality, presented as a UML class diagram. The IrisCodeEditorSessionService relies on the IrisSettingsService to fetch the currently configured guidance template for the course in which the user is engaged. It further utilizes repository classes to locate and validate sessions, messages and exercise plan steps. Message storage is facilitated by the IrisMessageService, while communication with Pyris is managed through the IrisConnectorService to obtain a response from LLM. This response is parsed and subsequently relayed to the user via the IrisWebsocketService. This intricate interplay of services underscores the comprehensive functionality of the Artemis Server, particularly in the context of Iris and its dynamic integration within the Code Editor.
 
 #figure(
-  image("figures/artemis-server.svg", width: 80%),
+  image("figures/artemis-server-component-d.png", width: 80%),
   caption: [
     Subsystem decomposition of the Artemis Server and Iris subsystem
   ],
@@ -551,26 +538,6 @@ This alteration is particularly impactful for the code editor use case, providin
 Furthermore, in an effort to streamline and simplify interactions with Pyris, we have refined the template parameter. The new endpoint now accommodates just a string as the template parameter, eliminating the need for an object containing both a string and an unused id. This modification enhances the efficiency and clarity of communication with Pyris, aligning more closely with the specific demands of the code editor use case.
 
 In essence, these adaptations in Pyris underscore our commitment to tailoring the system to the unique requirements of the code editor integration, ensuring a more seamless and effective interaction between Pyris and the code editor component.
-
-== Hardware Software Mapping
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This section describes how the subsystems are mapped onto existing hardware and software components. The description is accompanied by a UML deployment diagram. The existing components are often off-the-shelf components. If the components are distributed on different nodes, the network infrastructure and the protocols are also described.
-]
-
-== Access Control
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Optional section describing the access control and security issues based on the nonfunctional requirements in the requirements analysis. It also de- scribes the implementation of the access matrix based on capabilities or access control lists, the selection of authentication mechanisms and the use of en- cryption algorithms.
-]
 
 #pagebreak()
 
