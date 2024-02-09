@@ -53,31 +53,16 @@
 )
 
 = Introduction
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Introduce the topic of your thesis, e.g. with a little historical overview.
 
-  Extend
-]
+  In the digital age, the demand for computer scientists has witnessed a remarkable surge, resulting in an increasing number of students choosing computer-related majors in universities. This influx of students, however, has led to larger class sizes, presenting challenges to conventional teaching methods.
 
-  In the digital age, the demand for computer scientists has seen a significant
-rise, leading to a growing number of students opting for computer-related
-majors in universities. The increasing number of students enlarges class
-sizes, posing challenges to traditional teaching methods.
+In response to this issue, Artemis, an open-source learning platform designed for large computer science classes [KS18], introduces an innovative teaching philosophy known as interactive learning. Interactive learning represents a paradigm shift in education, emphasizing active student participation, collaboration, and real-time feedback [ABC20]. Unlike traditional lecture-based methods, interactive learning encourages students to engage with course content through discussions, problem-solving activities, and hands-on experiences.
 
-Artemis, an open source teaching platform, addresses this issue by introducing a new teaching philosophy known as interactive learning. This
-approach is specifically designed to cater to larger courses, offering scalability and adaptability [Kru21]. In computer science education, computer
-programming plays a crucial role [SSV20], and programming exercises are
-a great way to give students hands-on experience to program in a practical
-context [THH17].
+Artemis's incorporation of interactive learning principles goes beyond traditional teaching approaches, providing students with a more dynamic and personalized learning experience. This approach not only enhances scalability and adaptability [Kru21] but also fosters a deeper understanding of complex concepts by promoting active involvement in the learning process.
 
-Currently, programming exercises in Artemis are manually written by
-instructors and will distributed to all students uniformly which means that
-all students will get the same exercise.
+In the realm of computer science education, where programming plays a pivotal role [SSV20], practical hands-on experience is crucial for students to grasp programming concepts effectively [THH17]. Recognizing this, Artemis leverages interactive learning to transform the learning experience, offering a platform that encourages exploration, collaboration, and critical thinking among students.
+
+Moreover, Artemis holds the potential to extend the benefits of interactive learning beyond traditional classroom interactions. By integrating dynamic programming exercise creation into the platform, Artemis can further amplify the advantages of interactive learning, providing tailored and adaptive content that aligns with individual student needs. This evolution in teaching methods not only addresses the challenges of larger class sizes but also ensures a more engaging and effective learning environment in the digital age.
 
 == Problem
 Considering the diverse range of students participating in programming exercises, it is important to acknowledge that they possess varying levels of
@@ -145,50 +130,19 @@ adaptive programming exercises. This approach allows us to create exercises
 that are specifically tailored to the learning objectives and skill levels of
 students.
 
-To fulfill the objective of adaptive programming exercise generation, we
-leverage the four key components of a programming exercise: the problem statement, template repository, solution repository, and test repository.
-These components serve as the foundation for adjusting the difficulty level
-of programming exercises.
-
-When aiming to make programming exercises easier than the basic level,
-we employ a strategy of breaking down the task into detailed steps and
-providing comprehensive guidance. By offering explicit instructions and additional explanations, learners can better comprehend the problem at hand.
-
-Conversely, to increase the difficulty level of programming exercises, we
-adopt a different approach. We limit the task description, consolidate multiple tasks into a more complex problem, and provide a reduced amount
-of pre-written code in the template. By reducing the amount of scaffolding and guidance, we encourage advanced learners to apply their knowledge
-creatively.
-
-To implement these methods, the problem statement part and the template repository part mainly need to be adjusted accordingly on the basis
-of the basic exercises. To enable adaptive adjustment of the problem statement and template repository, we harness the power of prompt engineering
-techniques in conjunction with a LLM. By utilizing the contextual inputs
-provided by the four exercise components, the LLM can generate exercises
-of varying difficulty levels. The model takes into account the existing context, and generates additional details and code hints accordingly for easier
-version or limits guidance and template codes for harder version. This way,
-instructors can effortlessly create exercises tailored to the specific needs and skill levels of their students.
-
-Instructors will have access to a user-friendly interface that seamlessly
-integrates the adaptive exercise generation process. Instructors can take
-advantage of the ’Generate variants’ feature, showcased in Figure 1, to effortlessly create new adaptive exercises with varying difficulty levels. This
-functionality allows them to build upon the foundation of a basic exercise
-and generate variations to suit diverse needs. Moreover, instructors can utilize the “Adapt” feature on ’Edit in editor’ page, illustrated in Figure 2, to
-customize existing exercises by providing their own unique prompts which
-empowers them to tailor the exercises to better align with their teaching
-objectives.
-
-And to illustrate the workflow of this adaptive exercise generation process, Figure 3 showcases a visual representation of the iterative generation
-of exercise components based on the available context. The model can iteratively refine the problem statement, adjusts the template repository, and
-generates suitable code hints, resulting in exercises of varying difficulty levels.
-
 == Outline
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe the outline of your thesis
-]
+
+In Chapter 2, a concise overview of large language model is presented, followed by an in-depth examination of Artemis. The discussion extends to the programming exercise within Artemis, various roles within the system, and a comprehensive analysis of both the Iris and Pyris subsystems.
+
+Chapter 3 delves into the existing methodology for programming exercise creation and adaptation in Artemis. This is followed by the introduction of our novel system proposal, elucidating its functional and nonfunctional aspects, complemented by detailed system models.
+
+Building upon these foundational components, Chapter 4 explores the overarching system design and its practical implementation. 
+
+The subsequent focus in Chapter 5 is on the evaluation of the adaptation of programming exercises using Iris.
+
+The concluding Chapter 6 serves as a reflection on accomplished and ongoing objectives, providing a comprehensive wrap-up of our exploration. Additionally, this chapter highlights potential avenues for future research, encapsulating the essence of the thesis.
+
+#pagebreak()
 
 = Background
 In this chapter, we present the key concepts and technologies essential to this
@@ -199,48 +153,37 @@ proposed strategy for Athena to generate feedback suggestions for programming
 exercises. Finally, we give an overview of the microservice architecture, which
 Athena leverages to structure its components
 
-== LLM
-LLM is
+== Large Language Model (LLM)
+Large language models refer to sophisticated artificial intelligence systems designed to understand and generate human-like language. These models are typically built on deep learning architectures and are trained on vast datasets to learn the patterns, nuances, and contextual information of language. Notable examples include GPT-3 (Generative Pre-trained Transformer 3) and similar models. Large language models demonstrate advanced capabilities such as natural language understanding, text completion, translation, and even creative content generation. They have found applications in various fields, including natural language processing, content generation, chatbots, and machine translation, revolutionizing the way AI interacts with and produces human language.
 
 == Artemis
 
-Artemis is build using the Spring Boot framework and uses the MVC architecture to keep everything organized. The models are represented by the domain objects and database repositories. The views are the specific REST endpoints using Spring resources. The controllers are Spring services and implement the business logic.
+Artemis transforms interactive learning by providing immediate, personalized feedback on programming exercises, quizzes, modeling tasks, and beyond. Tailored for instructors' preferences and fostering real-time collaboration among students, it seamlessly merges creativity and education #footnote("https://github.com/ls1intum/Artemis"). 
+=== Programming exercise
+The programming exercise feature in Artemis encompasses a comprehensive set of components, including the problem statement, template repository, solution repository, and test repository with version control. It supports automatic individual feedback and assessment based on test cases and static code analysis for diverse programming languages. It is also interactive, allowing instructors to embed instructions and UML diagrams directly into dynamic problem statements. Instructors can prepare the exercise locally in their preferred IDE or use the online code editor without any setup. The feature ensures security by running test cases and student code in Docker environments on build agents, with additional support from test frameworks like Ares to prevent cheating.
+=== Roles
+Artemis implements a granular permission system catering to various users, currently supporting the following roles in ascending order of permissions:
 
-Within Artemis a bunch of different sub-systems already exist. Most notably are the Hestia, Metis, Apollon, and Athena subsystems, but there are also less obvious one, like the programming exercise sub-system and the lecture sub-system. Each of them integrates with Artemis in a slightly different way, but they all follow the same Artemis guidelines.
-We have added another subsystem called Iris to this, which provides LLM functionality to the other sub-systems. As part of our work it is already used by the programming-exercise and Hestia subsystems.
+- Anonymous
+- Student
+- Tutor
+- Editor
+- Instructor
+- Administrator
+
+It is crucial to highlight that creating or editing programming exercises necessitates a user to hold the role of Editor or higher. Hence, when referencing a user throughout this thesis, it implicitly denotes a user possessing the role of Editor or higher, unless explicitly specified otherwise.
 
 == Iris
 
-Iris is
+Iris #footnote("https://artemis.cit.tum.de/about-iris"), an Artemis subsystem, harnesses the power of large language models, and its development commenced during the Interactive Learning Practical Course in the summer semester of 2023. Designed to offer tailored responses, Iris draws context from diverse sources, such as a student's code, enabling personalized answers to all student queries.
 
-== Pyris
+While seamlessly integrated into Artemis, Iris also includes a standalone component known as Pyris #footnote("https://github.com/ls1intum/Pyris"). Iris aims to employ various large language models for responding to student inquiries. Microsoft's Guidance, which introduces the Handlebars templating language to address common concerns in dealing with large language models, proves to be a valuable tool for managing and controlling different models. However, it is available solely as a Python package. Consequently, we initiated the development of Pyris to act as a bridge between Artemis and Guidance. The primary architectural objective of the Iris subsystem is extendability, allowing other Artemis subsystems to seamlessly leverage the functionality of large language models.
 
-Pyris is
-
-== Programming exercise in Artemis
-Components, other roles, etc.
+#pagebreak()
 
 = Requirements Analysis
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This chapter follows the Requirements Analysis Document Template in @bruegge2004object. Important: Make sure that the whole chapter is independent of the chosen technology and development platform. The idea is that you illustrate concepts, taxonomies and relationships of the application domain independent of the solution domain! Cite @bruegge2004object several times in this chapter.
-
-]
-
 
 == Overview
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Provide a short overview about the purpose, scope, objectives and success criteria of the system that you like to develop.
-]
 
 In this section, we will define the formal requirements for the AI assistant integrated into the Code Editor. To provide context, we will begin by introducing the current system and our proposed system then explore a series of scenarios that illustrate the envisioned utilization of Iris within the Code Editor. Subsequently, we will delineate a comprehensive list of functional requirements and non-functional requirements. Finally, we will present our system model.
 
@@ -258,33 +201,13 @@ In this section, we will define the formal requirements for the AI assistant int
   The entirety of the programming exercise demands manual adaptation either through the online Code Editor or within a local Integrated Development Environment (IDE). It is crucial to acknowledge that the feature set of the online code editor might not be as extensive as that of a local IDE. However, opting for a local IDE involves additional configuration efforts and the necessity to clone the repository for each exercise.
 
 == Proposed System
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: If you leave out the section “Current system”, you can rename this section into “Requirements”.
 
-  based on current Iris system
-]
 We propose Iris code editor system which is enhanced with generative AI capabilities. Through collaboration with an embedded ChatGPT-style chatbot, instructors can effortlessly articulate their vision for the exercise, witnessing the Code Editor automatically adapt to their specifications. This innovative approach empowers instructors with the flexibility to maintain full control over the exercise while allowing the AI to seamlessly introduce numerous additions or modifications. The generated content, shaped by the AI, can span the entirety of the exercise or be as concise as a single line of code. This streamlined and intuitive process not only accelerates exercise creation but also fosters a dynamic and collaborative environment between instructors and artificial intelligence, unlocking new possibilities for engaging and effective programming education. In the following,
 we will describe the functional and non-functional requirements of Iris code editor system using
 the Requirements Analysis Document Template in [BD09]
 
 === Functional Requirements
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: List and describe all functional requirements of your system. Also mention requirements that you were not able to realize. The short title should be in the form “verb objective”
 
-  - FR1 Short Title: Short Description. 
-  - FR2 Short Title: Short Description. 
-  - FR3 Short Title: Short Description.
-]
 Functional requirements stand independent of implementation details, specifically focusing on describing the interactions between the system and its environment, as articulated in [BD09].
 
 - FR1 Chat with Iris in Code Editor: The user can chat with Iris via a chat window in Code Editor.
@@ -294,23 +217,12 @@ Functional requirements stand independent of implementation details, specificall
 - FR5 Execute exercise plan: The user will be able to execute the plan, which will trigger the LLM to perform the actions described in each component of the plan. The plan will be executed in the order in which the components appear in the plan.
 - FR6 Pause and resume exercise plan: The user should be able to pause and resume the execution of the plan at any time, causing Iris to stop or resume at the next possible step.
 - FR7 View plan execution error: If an error occurs while executing the plan, the user should be notified of the error and the plan will be paused.
-- FR8 View changes in Code Editor: The user should be able to view applied changes in Code Editor.
+- FR8 View changes in Code Editor: Users should be able to view the applied changes in the code editor and compare them to what was before the changes.
 - FR9 Clear chat history: The chat window will have a button that allows the user to clear the chat history.
+- FR10 Undo changes: The user will be able to undo Iris' changes to the exercise.
 
 === Nonfunctional Requirements
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: List and describe all nonfunctional requirements of your system. Also mention requirements that you were not able to realize. Categorize them using the FURPS+ model described in @bruegge2004object without the category functionality that was already covered with the functional requirements.
 
-  - NFR1 Category: Short Description. 
-  - NFR2 Category: Short Description. 
-  - NFR3 Category: Short Description.
-
-]
 
 - NFR1 Functionality: The changes made by the LLM to the exercise will be accurate and relevant to the user’s input and the context of the exercise.
 - NFR2 Usability: The chat window will be minimizable and resizeable with a single click or drag respectively.
@@ -322,32 +234,10 @@ Functional requirements stand independent of implementation details, specificall
 - NFR8 Usability: The system will display accurate error messages to the user in the case of exceptional behavior, such as invalid input or invalid responses from the LLM.
 
 == System Models
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This section includes important system models for the requirements analysis.
-]
+
 In this section of the requirements analysis, we delineate the system models for the project. We commence by elucidating the envisioned scenarios for the system. Subsequently, we present the use case model, analysis object model, dynamic model, and user interface of the system, accompanied by comprehensive diagrams and detailed descriptions.
 === Scenarios
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: If you do not distinguish between visionary and demo scenarios, you can remove the two subsubsections below and list all scenarios here.
 
-  *Visionary Scenarios*
-
-  Note: Describe 1-2 visionary scenario here, i.e. a scenario that would perfectly solve your problem, even if it might not be realizable. Use free text description.
-
-  *Demo Scenarios*
-
-  Note: Describe 1-2 demo scenario here, i.e. a scenario that you can implement and demonstrate until the end of your thesis. Use free text description.
-]
 As defined by [BD09], a scenario is described as 'a concrete, focused, informal description of a single feature of the system from the viewpoint of a single actor.' A visionary scenario represents an idealized solution to a problem, even if it may not be entirely achievable. In contrast, a demo scenario is one that is feasible, implementable, and can be demonstrated by the conclusion of this thesis. In this section, we will present both a visionary scenario and a demo scenario for our project.
 
 We introduce the scenarios featuring Jane, an editor of a course in Artemis. Jane's objective is to adapt a sorting strategy programming exercise tailored to meet the diverse needs of students with varying levels of experience.
@@ -387,15 +277,7 @@ To address these remaining modifications, Jane manually fine-tunes the exercise,
 ]
 The above scenario is more realistic than the previous one as it provides Iris with more specific instructions. These precise instructions enhance Iris's comprehension and organizational capabilities, providing a fixed endpoint and constraint. Furthermore, users have the capability to monitor the entire process. The execution of the corresponding plan only takes place after users approve Iris's proposed plan, enabling them to closely observe the execution process and subsequently review the changes implemented by Iris.
 === Use Case Model
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This subsection should contain a UML Use Case Diagram including roles and their use cases. You can use colors to indicate priorities. Think about splitting the diagram into multiple ones if you have more than 10 use cases. *Important:* Make sure to describe the most important use cases using the use case table template (./tex/use-case-table.tex). Also describe the rationale of the use case model, i.e. why you modeled it like you show it in the diagram.
 
-]
 According to Bruegge and Dutoit, use cases are described as 'a function provided by the system that yields a visible result for an actor' [BD09]. In the context of this discussion, the actors are represented by editors interacting with the system Iris.
 
 The @use-case visually illustrates comprehensive use cases derived directly from the functional requirements outlined in Section 3.3.1. The interactive functionalities of the system empower users to seamlessly communicate with Iris through a dedicated chat window integrated into the Code Editor (FR1). This establishes a direct and intuitive channel for users to convey their requirements and receive assistance from Iris (FR2).
@@ -414,15 +296,7 @@ Recognizing the iterative nature of exercise planning, users can actively engage
 Following the execution of the plan, users can seamlessly verify the applied changes in the exercise (FR8) or check the error message (FR7) if the execution failed.
 
 === Analysis Object Model
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This subsection should contain a UML Class Diagram showing the most important objects, attributes, methods and relations of your application domain including taxonomies using specification inheritance (see @bruegge2004object). Do not insert objects, attributes or methods of the solution domain. *Important:* Make sure to describe the analysis object model thoroughly in the text so that readers are able to understand the diagram. Also write about the rationale how and why you modeled the concepts like this.
 
-]
 As described by Bruegge and Dutoit, we use the analysis model to prepare for
 the architecture of the system [BD09]. The corresponding analysis object model is
 shown in @analysis-object-model and includes the most important objects, attributes, methods
@@ -442,14 +316,7 @@ Within the IrisExercisePlanStep, a fundamental unit of the exercise plan, lies a
 This modular and hierarchical structure within the IrisCodeEditorSession facilitates a granular representation of user interactions, allowing for the management and tracking of messages, content types, and exercise plans. The inclusion of subtypes in IrisMessageContent enhances the system's versatility, accommodating diverse forms of communication between users and Iris. The robust definition of IrisExercisePlan and its associated components ensures a comprehensive framework for proposing, executing, and monitoring exercise plans, thereby contributing to the overall effectiveness and adaptability of the Iris system.
 
 === Dynamic Model
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This subsection should contain dynamic UML diagrams. These can be a UML state diagrams, UML communication diagrams or UML activity diagrams.*Important:* Make sure to describe the diagram and its rationale in the text. *Do not use UML sequence diagrams.*
-]
+
 #figure(
   image("figures/activity (2).svg", width: 80%),
   caption: [
@@ -469,14 +336,6 @@ For each step, Artemis sends a request to Pyris, facilitating the retrieval of e
 Upon completing the exercise modifications, users have the flexibility to submit their changes and exit the Code Editor. This model encapsulates a dynamic and iterative workflow, allowing users to seamlessly transition between executing pre-defined plans and engaging in freeform interactions with Iris. The incorporation of these features ensures a responsive and user-centric experience within the Code Editor, facilitating the efficient adaptation of exercises to meet specific requirements.
 
 === User Interface
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Show mockups of the user interface of the software you develop and their connections / transitions. You can also create a storyboard. *Important:* Describe the mockups and their rationale in the text.
-]
 
 This section presents the user interface for the integration of Iris into the Code Editor.
 
@@ -553,26 +412,14 @@ In the event of an error during the execution of the fourth step, as depicted in
   ],
 ) <insertion>
 
+#pagebreak()
+
 = System Design
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This chapter follows the System Design Document Template in @bruegge2004object. You describe in this chapter how you map the concepts of the application domain to the solution domain. Some sections are optional, if they do not apply to your problem. Cite @bruegge2004object several times in this chapter.
-]
+
 In this section, we will discuss design decisions made in the implementation of the Iris Code Editor project.
 
 == Overview
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Provide a brief overview of the software architecture and references to other chapters (e.g. requirements analysis), references to existing systems, constraints impacting the software architecture..
-]
+
 Our exploration commences with a detailed examination of the decision-making process involved in choosing between two prototypes. This critical design phase sets the foundation for the subsequent stages of our system. We will delve into the factors, considerations, and methodologies that guide us through this pivotal step, ensuring the selection of a prototype that aligns seamlessly with our objectives.
 
 Following this, our focus shifts to the intricate lower-level methods employed in the generation and application of changes by the Language Model Manager (LLM) to the exercise. This phase is integral to the dynamic adaptability of our system, encompassing the fine-grained details of how the LLM orchestrates modifications, ensuring precision and coherence with the overarching goals of the exercise adaptation process. We will unravel the intricacies of this transformative process, shedding light on the mechanisms that underpin the seamless integration of changes proposed by the LLM into the exercise structure.
@@ -647,14 +494,7 @@ The disadvantage is that it's difficult to obtain the unsaved changes of the rep
 Considering the performance and robustness of the project, we decided to implement the second approach. However, due to time constraints, we did not achieve the new storage method. It will be included in future work.
 
 == Subsytem Decomposition
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe the architecture of your system by decomposing it into subsys- tems and the services provided by each subsystem. Use UML class diagrams including packages / components for each subsystem.
-]
+
 As an integral subsystem of Artemis, Iris plays a pivotal role in enhancing the overall user experience by meticulously analyzing exercises and user requests to generate highly-targeted suggestions. Functioning in harmony with two other essential subsystems—namely, the Git service, responsible for managing the code repositories of the programming exercises, and Pyris, which acts as the intermediary for user requests and responses from the LLM—Iris forms a dynamic trio to empower Artemis with advanced capabilities.
 
 The Git service ensures seamless access to a comprehensive array of programming exercises, fostering a diverse and engaging learning environment. Meanwhile, Pyris acts as the communication bridge between Artemis and the LLM, efficiently handling requests and relaying responses in a timely manner.
@@ -732,16 +572,10 @@ In essence, these adaptations in Pyris underscore our commitment to tailoring th
   Note: Optional section describing the access control and security issues based on the nonfunctional requirements in the requirements analysis. It also de- scribes the implementation of the access matrix based on capabilities or access control lists, the selection of authentication mechanisms and the use of en- cryption algorithms.
 ]
 
+#pagebreak()
 
 = Evaluation
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: If you did an evaluation / case study, describe it here.
-]
+
 Ensuring the alignment of our proposed solution with organizational goals and meeting expected standards is paramount. Our evaluation process employs a rigorous experimental methodology meticulously crafted to address specific hypotheses regarding the performance of the LLM-based programming exercise adaptation system. 
 
 == Design 
@@ -846,6 +680,8 @@ In addition to the ratings, we let evaluators record as the whole process. This 
 ]
 bias
 
+#pagebreak()
+
 = Summary
 #rect(
   width: 100%,
@@ -874,19 +710,53 @@ In the subsequent sections, we delve into the current state of the thesis, highl
   stroke: black,
 ) 
 
-#let partial-g = circle(
-  radius: 0.5em,
-  fill: gradient.linear((black, 0%), (white, 70%), (white, 100%)),
-  stroke: black,
+#let partial = circle(
+  radius: 0.3em,
+  fill: gray,
+  stroke: gray,
 )
 
-#let fulfilled-g = circle(
-  radius: 0.5em,
+#let fulfilled = circle(
+  radius: 0.3em,
   fill: black,
   stroke: black,
 )
-Tables 8.1 provides a comprehensive overview of the status of functional requirements of the project. Each functional requirement is labeled as (fulfill-g) for realized, partial-g for partially realized, and #open for not realized. Further details on realized goals and ongoing objectives are discussed in the subsequent sections.
+@status provides a comprehensive overview of the status of functional requirements of the project. The subsequent notation is employed to monitor the current state of each objective.
 
+#grid(
+  columns: 2,
+  gutter: 1em,
+  open, [
+    *Open*: This requirement falls outside the scope of this thesis, leaving it open for future exploration.
+  ],
+  partial, [
+    *Partially Fulfilled*: This requirement was partially achieved in the scope of this thesis.
+    We suggest further effort in this domain.
+  ],
+  fulfilled, [
+    *Fulfilled*: This requirement has been fully satisfied within the scope of this thesis.
+  ]
+)
+
+#figure(
+  table(
+    columns: 3,
+    [*ID*], [*Requirement*], [*Status*],
+    [FR1], [Chat with Iris in Code Editor], fulfilled,
+    [FR2], [Iris suggests plan], fulfilled,
+    [FR3], [Review exercise plan], fulfilled,
+    [FR4], [Modify exercise plan], open,
+    [FR5], [Execute exercise plan], fulfilled,
+    [FR6], [Pause and resume exercise plan], fulfilled,
+    [FR7], [View plan execution error], fulfilled,
+    [FR8], [View changes in Code Editor], partial,
+    [FR9], [Clear chat history], fulfilled,
+    [FR10], [Undo changes], open,
+  ),
+  caption: [
+    Status of Iris Code Editor Project
+  ],
+) <status>
 
 
 === Realized Goals
@@ -899,6 +769,8 @@ Tables 8.1 provides a comprehensive overview of the status of functional require
   Note: Summarize the achieved goals by repeating the realized requirements or use cases stating how you realized them.
 ]
 
+Several goals outlined in the functional requirements have been successfully achieved. Firstly, FR1 enables users to engage in a chat with Iris directly within the Code Editor. Building upon this, FR2 introduces a feature where Iris not only comprehends user requests but also suggests a plan of action for adapting the exercise based on the user's input, displayed within the chat window. Users can thoroughly review the proposed exercise plan, as facilitated by FR3. Additionally, FR5 empowers users to execute the exercise plan, triggering Iris to perform actions in the specified order. The system supports user flexibility with FR6, allowing the pause and resume of the plan at any point, effectively halting or continuing Iris's actions. In case of plan execution errors (FR7), users receive prompt notifications, and the plan is automatically paused for their attention. FR8 ensures that users can readily inspect the applied changes in the Code Editor; however, it is important to note that the comparison aspect of this feature has not been fully completed. Finally, FR9 caters to user convenience by incorporating a feature that allows clearing the chat history in the chat window. Collectively, these achievements signify successful integration and implementation of essential features, enhancing the overall user experience within the Code Editor interface.
+
 === Open Goals
 #rect(
   width: 100%,
@@ -908,6 +780,8 @@ Tables 8.1 provides a comprehensive overview of the status of functional require
 )[
   Note: Summarize the open goals by repeating the open requirements or use cases and explaining why you were not able to achieve them. Important: It might be suspicious, if you do not have open goals. This usually indicates that you did not thoroughly analyze your problems.
 ]
+Moving forward, certain requirements are identified as open goals within the scope of the project. Specifically, FR4 entails enabling users to modify the generation plan, allowing for a more personalized and adaptable approach to exercise adaptation plan. Additionally, FR10 introduces the capability for users to undo changes made by Iris to the exercise, offering a layer of flexibility and control over the modification process. While these functionalities remain pending, they represent areas for potential future development and enhancement in the project, aligning with the overarching goal of providing users with a comprehensive and customizable experience within the Iris platform.
+
 
 == Conclusion
 #rect(
@@ -918,6 +792,7 @@ Tables 8.1 provides a comprehensive overview of the status of functional require
 )[
   Note: Recap shortly which problem you solved in your thesis and discuss your *contributions* here.
 ]
+
 
 == Future Work
 #rect(
