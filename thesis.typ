@@ -176,6 +176,10 @@ While seamlessly integrated into Artemis, Iris also includes a standalone compon
 
 #pagebreak()
 
+= Related Work
+
+#pagebreak()
+
 = Requirements Analysis
 
 == Overview
@@ -316,9 +320,9 @@ The dynamic model describes the behavior of the system in terms of state changes
 Editor in the form of a UML activity diagram.
 
 
-This model delineates the intricacies of adapting an exercise using Iris within the Code Editor. The user initiates the process by communicating with Iris through the chat window (FR1.1). Subsequently, Artemis engages Pyris to generate a response to the user's message, potentially yielding an exercise plan (FR1.2). The user is presented with the option to execute this plan or to continue interacting with Iris through text messages. Opting to execute the plan prompts Artemis to commence the sequential execution of plan steps.
+This model delineates the intricacies of adapting an exercise using Iris within the Code Editor. The user initiates the process by communicating with Iris through the chat window (FR1). Subsequently, Artemis engages Pyris to generate a response to the user's message, potentially yielding an exercise plan (FR2). The user is presented with the option to execute this plan or to continue interacting with Iris through text messages. Opting to execute the plan prompts Artemis to commence the sequential execution of plan steps.
 
-For each step, Artemis sends a request to Pyris, facilitating the retrieval of exercise modifications, subsequently applying these changes to the exercise, and reloading the client (FR1.3). Users maintain control over the process by having the option to pause the plan (FR1.4) at any point. Subsequently, users can choose to either resume the plan (FR1.4) or resume communication with Iris through text messages.
+For each step, Artemis sends a request to Pyris, facilitating the retrieval of exercise modifications, subsequently applying these changes to the exercise, and reloading the client (FR3). Users maintain control over the process by having the option to pause the plan (FR4) at any point. Subsequently, users can choose to either resume the plan (FR4) or resume communication with Iris through text messages.
 
 Upon completing the exercise modifications, users have the flexibility to submit their changes and exit the Code Editor. This model encapsulates a dynamic and iterative workflow, allowing users to seamlessly transition between executing pre-defined plans and engaging in freeform interactions with Iris. The incorporation of these features ensures a responsive and user-centric experience within the Code Editor, facilitating the efficient adaptation of exercises to meet specific requirements.
 
@@ -546,23 +550,19 @@ In essence, these adaptations in Pyris underscore our commitment to tailoring th
 Ensuring the alignment of our proposed solution with organizational goals and meeting expected standards is paramount. Our evaluation process employs a rigorous experimental methodology meticulously crafted to address specific hypotheses regarding the performance of the LLM-based programming exercise adaptation system. 
 
 == Design 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe the design / methodology of the evaluation and why you did it like that. E.g. what kind of evaluation have you done e.g. questionnaire, personal interviews, simulation, quantitative analysis of metrics, what kind of participants, what kind of questions, what was the procedure?
-]
+In this section, we present the design of the evaluation process. We begin by outlining the objectives and participants involved, followed by an overview of the evaluation procedures. Lastly, we introduce the survey component of the evaluation.
+
 === Objective
 The overarching goal of this experimental study is to assess the performance and capabilities of Iris, our programming exercise adaptation system. Two distinct experiments have been designed, each focusing on specific aspects of Iris's functionality.
 
 === Experimental Groups
 
+Users of Iris Code Editor feature are programming exercise creators using Artemis. Therefore, we selected participants from the exercise creator group of Introduction to Programming lecture WS23/24 becuase they are experienced with programming exercise creation and adaptation process in Artemis.
+
 - *Control Group*: Participants in this group will adapt the programming exercise manually, following the conventional approach.
 - *Experimental Group*: Participants in this group will utilize Iris to adapt the programming exercise.
 
-We conducted a series of two experiments to comprehensively assess its capabilities.
+We conducted a series of three experiments to comprehensively assess its capabilities.
 
 === Experiment 1: Replacing Search Algorithms
 
@@ -604,72 +604,141 @@ After completing the three experiments, participants will be presented with the 
 - I prefer Iris over ChatGPT to adapt the programming exercise
 - Iris' potential to improve the exercise creation process is high
 
-In addition to the ratings, we let evaluators record as the whole process. This practice will enhance our ability to analyze the accuracy and effectiveness of the system.
+In addition to the survey questions, we would like to gather text feedback based on the following open-ended questions:
+- What do you think of the overall Iris exercise adaptation feature? Can it be useful for the real work of editor or is it a redundant feature and not very helpful?
+- What needs to be improved? Which aspect is good?
+- What kind of tasks will you prefer to do by yourself instead of using Iris?
+- What kind of tasks will you prefer to let Iris do it?
+
+We also ask evaluators to record their entire experiment process. This approach will strengthen our ability to analyze the system's accuracy and effectiveness.
 
 == Results
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Summarize the most interesting results of your evaluation (without interpretation). Additional results can be put into the appendix.
+
+
+We gathered data from four sets of control groups, four complete sets of experimental groups, three subsets of experimental group data that exclusively participated in Experiment 1, and received responses from seven completed questionnaires, along with five pieces of text feedback provided in Appendix A.
+
+#figure(
+  grid(
+    columns: 2,
+    rows: 3,
+    gutter: 1em,
+    image("/figures/ex1.1.png"),
+    image("/figures/ex1.2.png"),
+    image("/figures/ex2.1.png"),
+    image("/figures/ex2.2.png"),
+    image("/figures/ex3.1.png"),
+    image("/figures/ex3.2.png"),  
+  ),
+  caption: [Survey results for component plans related questions: left - accuracy, right - consistency (top to bottom: Experiment 1-3)]
+) <component-plan>
+
+#figure(
+  grid(
+    columns: 2,
+    rows: 3,
+    gutter: 1em,
+    image("/figures/ex1.3.png"),
+    image("/figures/ex1.4.png"),
+    image("/figures/ex2.3.png"),
+    image("/figures/ex2.4.png"),
+    image("/figures/ex3.3.png"),
+    image("/figures/ex3.4.png"),  
+  ),
+  caption: [Survey results for component changes related questions: left - accuracy, right - consistency (top to bottom: Experiment 1-3)]
+) <component-change>
+
+Through the aforementioned experiments, we have acquired results regarding component plan accuracy and consistency, as depicted in @component-plan. Furthermore, the obtained results for component changes accuracy and consistency are illustrated in @component-change.
+
+#grid(columns: 2, gutter: 2em)[
+  #figure(
+    image("figures/group-time.png"),
+    caption: [
+      Time spent in control group and experimental group (y:minutes)
+    ],
+  ) <group-time>
+][
+  #figure(
+    image("figures/wait-time.png"),
+    caption: [
+      The total time spent in the experimental group and the time spent waiting for Iris response (y:minutes)
+    ],
+  ) <wait-time>
+
 ]
+
+@group-time presents a comparative analysis of the time taken between the control group and the experimental group across all three experiments.
+
+@wait-time showcases a comparison between the time spent waiting for the Iris response and the remaining time within the experimental group.
+
+
+#grid(columns: 2, gutter: 1em)[
+  #figure(
+    image("figures/overGPT.png"),
+    caption: [
+      Survey results of question: I prefer Iris over ChatGPT to adapt the programming exercise
+    ],
+  ) <overGPT>
+][
+  #figure(
+    image("figures/potential.png"),
+    caption: [
+      Survey results of question: Iris' potential to improve the exercise creation process is high
+    ],
+  ) <potential>
+]
+
+@overGPT illustrates the statistics pertaining to the survey question "I prefer Iris over ChatGPT to adapt the programming exercise," while @potential showcases the statistics for the survey question "Iris' potential to improve the exercise creation process is high."
+
 
 == Findings
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Interpret the results and conclude interesting findings
-]
+
+While our conclusions are somewhat constrained by the small sample size, several noteworthy findings have emerged:
+
+- Finding 1: Regardless of the complexity of the requirement, Iris consistently generates component plans that are more accurate and consistent compared to the component changes it produces.
+
+- Finding 2: During the first experiment, the experimental group invested significantly more time than the control group. However, in subsequent experiments, the experimental group spent less time than the control group. Upon reviewing the screen recordings, we observed that a substantial portion of the initial time spent by the experimental group in Experiment 1 was devoted to becoming familiar with the use of Iris and the online code editor.
+
+- Finding 3: The experimental group spent a considerable amount of time simply waiting for Iris to respond, including replying to requests and executing plans. This waiting time accounted for more than one-third of the total experimental duration. Improving Iris's response speed and allowing users to browse changes during plan execution could effectively reduce the time spent on adaptation exercises.
+
+- Finding 4: Currently, users do not exhibit a clear preference between Iris and ChatGPT for adapting exercises. However, they acknowledge Iris's potential to enhance the efficiency of exercise adaptation within Artemis.
+
+- Finding 5: Iris demonstrates strong performance when fulfilling initial requests for both component plan proposals and applied component changes. However, its performance diminishes when users request further modifications.
+
+
 
 == Discussion
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Discuss the findings in more detail and also review possible disadvantages that you found
-]
+
+
+In addressing the identified inaccuracies in component changes (Finding 1), our further investigation revealed that these discrepancies primarily stem from the inherent challenges of find and replace operations. To minimize token usage, we opted for a find and replace approach instead of a complete rewrite. However, this approach presents a challenge in ensuring the accuracy of the find operation. We observed instances where, despite LLM generating fairly accurate component changes, minor inconsistencies with the original content, such as an additional space or a missing symbol, resulted in the rejection of the change during execution.
+
+Regarding the inconsistencies in component changes (Finding 1), our exploration highlighted the impact of inconsistencies in the content of various exercise components as context. Here, we provide a brief overview of the component change generation process. We pass the four components of the exercise and the corresponding component plan to LLM, which then generates specific component change based on these contextual inputs. 
+
+However, to allow users to review and potentially undo changes proposed by Iris, we refrain from immediately saving changes to the database. Instead, users are prompted to submit changes they agree with. However, to maintain system stability, we retrieve the content of the four components from the database and pass them to LLM. This approach inadvertently introduces inconsistencies between the current content displayed to the user and the content sent to LLM. 
+
+While this discrepancy is negligible for initial requests, where simply following the component plan yields satisfactory results, it significantly impacts subsequent requests (Finding 5). Users refrain from submitting changes until they approve them, potentially leading to minor disruptions in component plans. Nevertheless, these plans remain generally consistent with each other, primarily due to users' clear and accurate requests facilitating LLM in generating the component plan. However, this poses a significant challenge for component changes generation, as none of the contextual inputs received by LLM are sufficiently accurate.
+
+Regarding the waiting time for responses (Finding 3), our analysis of screen recordings revealed that it takes approximately 30 seconds to receive a response, including proposed component plans, with an additional 2-3 minutes required to complete plan execution. Users have the option to review changes during execution, provided the chat window remains open; otherwise, execution pauses. This pause decision is designed based on the user's regular behavior. Overall, it increases efficiency if users understand and can review the changes that have been made as the plan executes.
 
 == Limitations
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe limitations and threats to validity of your evaluation, e.g. reliability, generalizability, selection bias, researcher bias
-]
-bias
+
+The evaluation presented here is constrained by the following factors:
+
+- *Scope and Sample Limitations*
+The study's scope is restricted to three experiments, two sets of programming exercises, and the collection of only four complete sets of experimental group data. This limitation constrains the generalizability of the research findings. Future studies should broaden the evaluation to encompass a wider array of practice and educational contexts, incorporating a more diverse sample of submissions.
+
+- *Time and Computational Constraints*
+The experiments were constrained by limitations in time and computational resources, including token constraints, which restricted the depth of the analyses. Subsequent research efforts should prioritize more extensive evaluations to enhance the comprehensiveness of the findings.
+
+- *Fixed LLM Model and Configuration*
+The experiments exclusively utilized one model, the OpenAI GPT4-turbo, with fixed configuration parameters, such as temperature. This fixed model and configuration may not represent the optimal choice for all scenarios. Future investigations could explore alternative models and configurations to enhance the robustness and versatility of the research outcomes.
 
 #pagebreak()
 
 = Summary
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This chapter includes the status of your thesis, a conclusion and an outlook about future work.
-]
 
 In the subsequent sections, we delve into the current state of the thesis, highlight key conclusions, and explore potential avenues for future research.
 
 == Status
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe honestly the achieved goals (e.g. the well implemented and tested use cases) and the open goals here. if you only have achieved goals, you did something wrong in your analysis.
-]
 
 #let open = circle(
   radius: 0.3em,
@@ -727,46 +796,33 @@ In the subsequent sections, we delve into the current state of the thesis, highl
 
 
 === Realized Goals
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Summarize the achieved goals by repeating the realized requirements or use cases stating how you realized them.
-]
 
-Several goals outlined in the functional requirements have been successfully achieved. Firstly, FR1 enables users to engage in a chat with Iris directly within the Code Editor. Building upon this, FR2 introduces a feature where Iris not only comprehends user requests but also suggests a plan of action for adapting the exercise based on the user's input, displayed within the chat window. Users can thoroughly review the proposed exercise plan, as facilitated by FR3. Additionally, FR5 empowers users to execute the exercise plan, triggering Iris to perform actions in the specified order. The system supports user flexibility with FR6, allowing the pause and resume of the plan at any point, effectively halting or continuing Iris's actions. In case of plan execution errors (FR7), users receive prompt notifications, and the plan is automatically paused for their attention. FR8 ensures that users can readily inspect the applied changes in the Code Editor; however, it is important to note that the comparison aspect of this feature has not been fully completed. Finally, FR9 caters to user convenience by incorporating a feature that allows clearing the chat history in the chat window. Collectively, these achievements signify successful integration and implementation of essential features, enhancing the overall user experience within the Code Editor interface.
+Several goals outlined in the functional requirements have been successfully achieved. Firstly, FR1 enables users to engage in a chat with Iris directly within the Code Editor. Building upon this, FR2 introduces a feature where Iris not only comprehends user requests but also suggests a plan of action for adapting the exercise based on the user's input, displayed within the chat window. Users can thoroughly review the proposed exercise plan, as facilitated by FR3. 
+
+Additionally, FR5 empowers users to execute the exercise plan, triggering Iris to perform actions in the specified order. The system supports user flexibility with FR6, allowing the pause and resume of the plan at any point, effectively halting or continuing Iris's actions. In case of plan execution errors (FR7), users receive prompt notifications, and the plan is automatically paused for their attention. FR8 ensures that users can readily inspect the applied changes in the Code Editor; however, it is important to note that the comparison aspect of this feature has not been fully completed. Finally, FR9 caters to user convenience by incorporating a feature that allows clearing the chat history in the chat window. 
+
+Collectively, these achievements signify successful integration and implementation of essential features, enhancing the overall user experience within the Code Editor interface.
 
 === Open Goals
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Summarize the open goals by repeating the open requirements or use cases and explaining why you were not able to achieve them. Important: It might be suspicious, if you do not have open goals. This usually indicates that you did not thoroughly analyze your problems.
-]
-Moving forward, certain requirements are identified as open goals within the scope of the project. Specifically, FR4 entails enabling users to modify the generation plan, allowing for a more personalized and adaptable approach to exercise adaptation plan. Additionally, FR10 introduces the capability for users to undo changes made by Iris to the exercise, offering a layer of flexibility and control over the modification process. While these functionalities remain pending, they represent areas for potential future development and enhancement in the project, aligning with the overarching goal of providing users with a comprehensive and customizable experience within the Iris platform.
+
+Considering the collaboration of two individuals in 6 months, our primary focus lies on ensuring the quality of the main feature of the project. Therefore, certain requirements have been identified as open goals within the project's scope. Specifically, FR4 involves enabling users to modify the generation plan, thereby fostering a more personalized and adaptable approach to exercise adaptation. Additionally, FR10 introduces the capability for users to undo changes made by Iris to the exercise, providing a layer of flexibility and control over the modification process. However, due to the instability of the current online code editor, implementing this requirement has proven to be more time-consuming than anticipated.
 
 
 == Conclusion
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Recap shortly which problem you solved in your thesis and discuss your *contributions* here.
-]
+This thesis addresses the challenge of the complex adaptation process for programming exercises within the Artemis platform. This complexity not only drains instructors' energy but also hinders the provision of adaptive programming exercises for effective learning. Leveraging Large Language Models (LLMs), we enhance the adaptation process of programming exercises on the Artemis platform. By doing so, we aim to improve instructors' efficiency in adapting programming exercises and enable the platform to cater to students' diverse skill levels and learning needs. 
+
+The thesis makes a significant contribution to the academic discourse surrounding the utilization of Large Language Models (LLMs) in educational technology. Through empirical data and analysis, it offers valuable insights into the capabilities and limitations of employing LLMs for programming exercise adaptation. These findings not only enrich our understanding of LLM applications in education but also provide valuable guidance for future research endeavors in this domain.
 
 
 == Future Work
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Tell us the next steps (that you would do if you have more time). Be creative, visionary and open-minded here.
-]
+
+In addition to the aforementioned open goals, the following steps are proposed as future enhancements for the Iris code editor feature.
+
+=== Displaying Differences between Iris Changes and Original Content
+Enhancing user experience and efficiency, users should have the ability to visualize the discrepancies between the changes proposed by Iris and the original content in real-time. This feature would provide users with a clearer understanding of the alterations made and guide their subsequent actions effectively.
+
+=== Real-Time Sending of Exercise Content to LLM
+To enhance the accuracy and consistency of component plans and changes, Iris should be capable of receiving real-time updates of exercise content, similar to those made by users. This ensures that Iris adapts based on the most up-to-date information, improving the alignment between user actions and Iris-generated suggestions.
+
+=== Detailed Visualization of Response Process
+Iris could offer a more detailed breakdown of its execution process to users, providing insights into the steps taken during response generation. This enhanced visualization would empower users with a deeper understanding of the mechanisms behind Iris's actions, fostering greater transparency and trust in the system.

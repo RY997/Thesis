@@ -92,7 +92,7 @@
 
   // Appendix.
   pagebreak()
-  heading(numbering: none)[Appendix A: Supplementary Material]
+  heading(numbering: none)[Appendix A: Text feedback of Evaluation]
   include("thesis_typ/appendix.typ")
 
   pagebreak()
