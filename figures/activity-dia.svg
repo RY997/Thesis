@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(0.5824260115623474, 0, 0, 0.6428050398826599, 3.8631889820098877, -56.99321746826172)" style="">
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-1" x="1" y="109" width="842" height="737" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-2" x="1" y="109" width="338" height="18" fill="none" stroke="#000000" stroke-width="2" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-2" fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+        <path d="M 145.668 113.893 L 146.846 113.893 L 146.846 122.5 L 145.668 122.5 Z M 148.588 116.225 L 149.59 116.225 L 149.59 117.115 Q 150.036 116.564 150.534 116.324 Q 151.032 116.084 151.641 116.084 Q 152.977 116.084 153.446 117.016 Q 153.704 117.525 153.704 118.475 L 153.704 122.5 L 152.631 122.5 L 152.631 118.545 Q 152.631 117.971 152.461 117.619 Q 152.18 117.033 151.442 117.033 Q 151.067 117.033 150.827 117.109 Q 150.393 117.238 150.065 117.625 Q 149.801 117.936 149.722 118.267 Q 149.643 118.598 149.643 119.213 L 149.643 122.5 L 148.588 122.5 Z M 151.067 116.072 Z M 155.89 120.531 Q 155.936 121.059 156.153 121.34 Q 156.552 121.85 157.536 121.85 Q 158.122 121.85 158.567 121.595 Q 159.013 121.34 159.013 120.807 Q 159.013 120.402 158.655 120.191 Q 158.427 120.062 157.753 119.893 L 156.915 119.682 Q 156.112 119.482 155.731 119.236 Q 155.052 118.809 155.052 118.053 Q 155.052 117.162 155.693 116.611 Q 156.335 116.061 157.419 116.061 Q 158.837 116.061 159.464 116.893 Q 159.856 117.42 159.845 118.029 L 158.849 118.029 Q 158.819 117.672 158.597 117.379 Q 158.233 116.963 157.337 116.963 Q 156.739 116.963 156.432 117.191 Q 156.124 117.42 156.124 117.795 Q 156.124 118.205 156.528 118.451 Q 156.763 118.598 157.22 118.709 L 157.917 118.879 Q 159.054 119.154 159.44 119.412 Q 160.056 119.816 160.056 120.684 Q 160.056 121.521 159.42 122.131 Q 158.784 122.74 157.483 122.74 Q 156.083 122.74 155.5 122.104 Q 154.917 121.469 154.876 120.531 Z M 157.448 116.072 Z M 161.473 114.473 L 162.539 114.473 L 162.539 116.225 L 163.541 116.225 L 163.541 117.086 L 162.539 117.086 L 162.539 121.182 Q 162.539 121.51 162.762 121.621 Q 162.885 121.686 163.172 121.686 Q 163.248 121.686 163.336 121.683 Q 163.424 121.68 163.541 121.668 L 163.541 122.5 Q 163.359 122.553 163.163 122.576 Q 162.967 122.6 162.738 122.6 Q 162 122.6 161.736 122.222 Q 161.473 121.844 161.473 121.24 L 161.473 117.086 L 160.623 117.086 L 160.623 116.225 L 161.473 116.225 Z M 164.628 116.225 L 165.63 116.225 L 165.63 117.309 Q 165.753 116.992 166.234 116.538 Q 166.714 116.084 167.341 116.084 Q 167.37 116.084 167.441 116.09 Q 167.511 116.096 167.681 116.113 L 167.681 117.227 Q 167.587 117.209 167.508 117.203 Q 167.429 117.197 167.335 117.197 Q 166.538 117.197 166.111 117.71 Q 165.683 118.223 165.683 118.891 L 165.683 122.5 L 164.628 122.5 Z M 169.653 116.225 L 169.653 120.391 Q 169.653 120.871 169.806 121.176 Q 170.087 121.738 170.854 121.738 Q 171.956 121.738 172.354 120.754 Q 172.571 120.227 172.571 119.307 L 172.571 116.225 L 173.626 116.225 L 173.626 122.5 L 172.63 122.5 L 172.641 121.574 Q 172.436 121.932 172.132 122.178 Q 171.528 122.67 170.667 122.67 Q 169.325 122.67 168.839 121.773 Q 168.575 121.293 168.575 120.49 L 168.575 116.225 Z M 171.1 116.072 Z M 177.693 116.043 Q 178.753 116.043 179.418 116.559 Q 180.083 117.074 180.218 118.334 L 179.193 118.334 Q 179.099 117.754 178.765 117.37 Q 178.431 116.986 177.693 116.986 Q 176.685 116.986 176.251 117.971 Q 175.97 118.609 175.97 119.547 Q 175.97 120.49 176.368 121.135 Q 176.767 121.779 177.622 121.779 Q 178.279 121.779 178.662 121.378 Q 179.046 120.977 179.193 120.279 L 180.218 120.279 Q 180.042 121.527 179.339 122.104 Q 178.636 122.682 177.54 122.682 Q 176.31 122.682 175.577 121.782 Q 174.845 120.883 174.845 119.535 Q 174.845 117.883 175.648 116.963 Q 176.451 116.043 177.693 116.043 Z M 177.529 116.072 Z M 181.483 114.473 L 182.549 114.473 L 182.549 116.225 L 183.551 116.225 L 183.551 117.086 L 182.549 117.086 L 182.549 121.182 Q 182.549 121.51 182.772 121.621 Q 182.895 121.686 183.182 121.686 Q 183.258 121.686 183.346 121.683 Q 183.434 121.68 183.551 121.668 L 183.551 122.5 Q 183.37 122.553 183.173 122.576 Q 182.977 122.6 182.749 122.6 Q 182.01 122.6 181.747 122.222 Q 181.483 121.844 181.483 121.24 L 181.483 117.086 L 180.633 117.086 L 180.633 116.225 L 181.483 116.225 Z M 187.087 121.82 Q 188.136 121.82 188.525 121.026 Q 188.915 120.232 188.915 119.26 Q 188.915 118.381 188.634 117.83 Q 188.188 116.963 187.098 116.963 Q 186.132 116.963 185.692 117.701 Q 185.253 118.439 185.253 119.482 Q 185.253 120.484 185.692 121.152 Q 186.132 121.82 187.087 121.82 Z M 187.128 116.043 Q 188.341 116.043 189.178 116.852 Q 190.016 117.66 190.016 119.23 Q 190.016 120.748 189.278 121.738 Q 188.54 122.729 186.987 122.729 Q 185.692 122.729 184.93 121.853 Q 184.169 120.977 184.169 119.5 Q 184.169 117.918 184.971 116.98 Q 185.774 116.043 187.128 116.043 Z M 187.093 116.072 Z M 191.3 116.225 L 192.302 116.225 L 192.302 117.309 Q 192.425 116.992 192.906 116.538 Q 193.386 116.084 194.013 116.084 Q 194.042 116.084 194.113 116.09 Q 194.183 116.096 194.353 116.113 L 194.353 117.227 Q 194.259 117.209 194.18 117.203 Q 194.101 117.197 194.007 117.197 Q 193.21 117.197 192.782 117.71 Q 192.355 118.223 192.355 118.891 L 192.355 122.5 L 191.3 122.5 Z"/>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-3" x="339" y="109" width="287" height="18" fill="none" stroke="#000000" stroke-width="2" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-3" fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+        <path d="M 466.997 118.973 L 465.69 115.17 L 464.302 118.973 Z M 465.081 113.893 L 466.399 113.893 L 469.522 122.5 L 468.245 122.5 L 467.372 119.922 L 463.968 119.922 L 463.036 122.5 L 461.841 122.5 Z M 470.467 116.225 L 471.469 116.225 L 471.469 117.309 Q 471.592 116.992 472.072 116.538 Q 472.553 116.084 473.18 116.084 Q 473.209 116.084 473.279 116.09 Q 473.35 116.096 473.519 116.113 L 473.519 117.227 Q 473.426 117.209 473.347 117.203 Q 473.268 117.197 473.174 117.197 Q 472.377 117.197 471.949 117.71 Q 471.521 118.223 471.521 118.891 L 471.521 122.5 L 470.467 122.5 Z M 474.648 114.473 L 475.714 114.473 L 475.714 116.225 L 476.716 116.225 L 476.716 117.086 L 475.714 117.086 L 475.714 121.182 Q 475.714 121.51 475.937 121.621 Q 476.06 121.686 476.347 121.686 Q 476.423 121.686 476.511 121.683 Q 476.599 121.68 476.716 121.668 L 476.716 122.5 Q 476.535 122.553 476.338 122.576 Q 476.142 122.6 475.913 122.6 Q 475.175 122.6 474.912 122.222 Q 474.648 121.844 474.648 121.24 L 474.648 117.086 L 473.798 117.086 L 473.798 116.225 L 474.648 116.225 Z M 480.375 116.084 Q 481.043 116.084 481.67 116.397 Q 482.296 116.711 482.625 117.209 Q 482.941 117.684 483.046 118.316 Q 483.14 118.75 483.14 119.699 L 478.541 119.699 Q 478.57 120.654 478.992 121.231 Q 479.414 121.809 480.298 121.809 Q 481.125 121.809 481.617 121.264 Q 481.898 120.947 482.015 120.531 L 483.052 120.531 Q 483.011 120.877 482.78 121.302 Q 482.548 121.727 482.261 121.996 Q 481.781 122.465 481.072 122.629 Q 480.691 122.723 480.211 122.723 Q 479.039 122.723 478.224 121.87 Q 477.41 121.018 477.41 119.482 Q 477.41 117.971 478.23 117.027 Q 479.05 116.084 480.375 116.084 Z M 482.056 118.861 Q 481.992 118.176 481.757 117.766 Q 481.324 117.004 480.31 117.004 Q 479.584 117.004 479.091 117.528 Q 478.599 118.053 478.57 118.861 Z M 480.275 116.072 Z M 484.436 116.225 L 485.479 116.225 L 485.479 117.115 Q 485.854 116.652 486.158 116.441 Q 486.68 116.084 487.342 116.084 Q 488.092 116.084 488.549 116.453 Q 488.807 116.664 489.018 117.074 Q 489.369 116.57 489.844 116.327 Q 490.318 116.084 490.91 116.084 Q 492.176 116.084 492.633 116.998 Q 492.879 117.49 492.879 118.322 L 492.879 122.5 L 491.783 122.5 L 491.783 118.141 Q 491.783 117.514 491.47 117.279 Q 491.156 117.045 490.705 117.045 Q 490.084 117.045 489.636 117.461 Q 489.188 117.877 489.188 118.85 L 489.188 122.5 L 488.115 122.5 L 488.115 118.404 Q 488.115 117.766 487.963 117.473 Q 487.723 117.033 487.066 117.033 Q 486.469 117.033 485.98 117.496 Q 485.49 117.959 485.49 119.172 L 485.49 122.5 L 484.436 122.5 Z M 494.434 116.254 L 495.507 116.254 L 495.507 122.5 L 494.434 122.5 Z M 494.434 113.893 L 495.507 113.893 L 495.507 115.088 L 494.434 115.088 Z M 497.723 120.531 Q 497.77 121.059 497.987 121.34 Q 498.386 121.85 499.37 121.85 Q 499.956 121.85 500.401 121.595 Q 500.846 121.34 500.846 120.807 Q 500.846 120.402 500.489 120.191 Q 500.261 120.062 499.587 119.893 L 498.749 119.682 Q 497.946 119.482 497.565 119.236 Q 496.886 118.809 496.886 118.053 Q 496.886 117.162 497.527 116.611 Q 498.169 116.061 499.253 116.061 Q 500.671 116.061 501.298 116.893 Q 501.69 117.42 501.678 118.029 L 500.682 118.029 Q 500.653 117.672 500.43 117.379 Q 500.067 116.963 499.171 116.963 Q 498.573 116.963 498.265 117.191 Q 497.958 117.42 497.958 117.795 Q 497.958 118.205 498.362 118.451 Q 498.596 118.598 499.053 118.709 L 499.751 118.879 Q 500.887 119.154 501.274 119.412 Q 501.889 119.816 501.889 120.684 Q 501.889 121.521 501.254 122.131 Q 500.618 122.74 499.317 122.74 Q 497.917 122.74 497.334 122.104 Q 496.751 121.469 496.71 120.531 Z M 499.282 116.072 Z"/>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-4" x="1" y="127" width="338" height="719" fill="none" stroke="#000000" stroke-width="2" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <ellipse cell-id="LL7yqVo44hmtHknDGPsA-5" cx="161.92" cy="147" rx="10" ry="10" fill="black" stroke="#000000" pointer-events="all"/>
+      <ellipse cell-id="LL7yqVo44hmtHknDGPsA-5" cx="161.92" cy="147" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-10" d="M 163.92 687.5 L 170.92 700 L 163.92 712.5 L 156.92 700 Z" fill="#5faaed" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-10" d="M 163.92 687.5 L 170.92 700 L 163.92 712.5 L 156.92 700 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-11" x="96.8" y="662.01" width="64.64" height="30" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-11" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-11" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 63px; height: 1px; padding-top: 669px; margin-left: 98px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Continue Editing?</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-15" x="54.22" y="695.01" width="42.58" height="30" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-15" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-15" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 41px; height: 1px; padding-top: 702px; margin-left: 55px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">[Yes]</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-16" x="157.99" y="725.01" width="42.58" height="30" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-16" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-16" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 41px; height: 1px; padding-top: 732px; margin-left: 159px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">[No]</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-29" d="M 164 600.5 L 171 613 L 164 625.5 L 157 613 Z" fill="#5faaed" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-29" d="M 164 600.5 L 171 613 L 164 625.5 L 157 613 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-30" x="78.58" y="598" width="101.08" height="30" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-30" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-30" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 99px; height: 1px; padding-top: 605px; margin-left: 80px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Execute                   <br />
+plan?</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-33" d="M 163.33 532.67 L 163.33 598.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-33" d="M 157.33 587.88 L 163.33 599.88 L 169.33 587.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-34" d="M 163.33 626 L 163.33 685.43" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-34" d="M 157.33 674.55 L 163.33 686.55 L 169.33 674.55" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-36" x="174" y="589" width="42.58" height="30" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-36" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-36" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 41px; height: 1px; padding-top: 596px; margin-left: 175px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">[Yes]</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-37" x="158" y="635.01" width="42.58" height="30" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-37" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-37" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 41px; height: 1px; padding-top: 642px; margin-left: 159px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">[No]</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-62" d="M 161.67 311 L 161.67 321.5 Q 161.67 331.5 162.5 331.5 L 162.92 331.5 Q 163.33 331.5 163.33 340.97 L 163.33 350.43" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-62" d="M 157.33 339.55 L 163.33 351.55 L 169.33 339.55" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-67" d="M 161.92 157 L 161.92 185.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-67" d="M 155.92 174.88 L 161.92 186.88 L 167.92 174.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-68" d="M 161.67 232.67 L 161.67 270.43" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-68" d="M 155.67 259.55 L 161.67 271.55 L 167.67 259.55" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-24" x="102.54" y="352.01" width="120" height="45" rx="15" ry="15" fill="#5faaed" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-24" x="102.54" y="352.01" width="120" height="45" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-25" x="104.54" y="353.01" width="120" height="45" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-25" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-25" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 360px; margin-left: 106px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Send the Requirement</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-89" d="M 163.33 712.67 L 163.33 745.43" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-89" d="M 157.33 734.55 L 163.33 746.55 L 169.33 734.55" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-106" d="M 156.67 699.33 L 34 699.33 Q 24 699.33 24 689.33 L 24 384.33 Q 24 374.33 34 374.33 L 101.1 374.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-106" d="M 90.22 380.33 L 102.22 374.33 L 90.22 368.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-31" x="103.91" y="488" width="120" height="45" rx="15" ry="15" fill="#5faaed" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-31" x="103.91" y="488" width="120" height="45" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-32" x="103.91" y="491" width="120" height="45" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-32" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-32" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 498px; margin-left: 105px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Check Component Plan</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-64" x="101.92" y="188" width="120" height="45" rx="15" ry="15" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-64" x="101.92" y="188" width="120" height="45" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-65" x="101.92" y="188" width="120" height="45" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-65" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-65" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 195px; margin-left: 103px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Open Exercise in Online Code Editor</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-27" x="101.92" y="272" width="120" height="39" rx="15" ry="15" fill="#5faaed" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-27" x="101.92" y="272" width="120" height="39" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-28" x="102.92" y="277" width="120" height="39" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-28" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-28" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 284px; margin-left: 104px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Open Chat Window</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-86" x="103.54" y="748" width="120" height="34" rx="15" ry="15" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-86" x="103.54" y="748" width="120" height="34" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-87" x="103.54" y="751" width="120" height="34" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-87" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-87" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 758px; margin-left: 105px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Submit Changes</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-38" x="339" y="127" width="287" height="719" fill="none" stroke="#000000" stroke-width="2" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-41" x="422.91" y="589" width="120" height="48" rx="15" ry="15" fill="#5faaed" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-41" x="422.91" y="589" width="120" height="48" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-42" x="428.33" y="594" width="110" height="46" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-42" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-42" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 108px; height: 1px; padding-top: 601px; margin-left: 429px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Send Request with Component Plan</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-43" x="423" y="747" width="120" height="36" rx="15" ry="15" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-43" x="423" y="747" width="120" height="36" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-44" x="428.42" y="750" width="110" height="46" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-44" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-44" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 108px; height: 1px; padding-top: 757px; margin-left: 429px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Re-build Exercise</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <ellipse cell-id="LL7yqVo44hmtHknDGPsA-90" cx="483.5" cy="831" rx="6.666666666666667" ry="6.666666666666667" fill="black" stroke="#000000" pointer-events="all"/>
+      <ellipse cell-id="LL7yqVo44hmtHknDGPsA-90" cx="483.5" cy="831" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-39" x="423.91" y="357.01" width="116" height="41" rx="15" ry="15" fill="#5faaed" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-39" x="423.91" y="357.01" width="116" height="41" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-40" x="433.91" y="363.01" width="98" height="31" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-40" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-40" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 96px; height: 1px; padding-top: 370px; margin-left: 435px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Send Request</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-75" x="420.91" y="416" width="124.01" height="40" rx="15" ry="15" fill="#5faaed" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-75" x="420.91" y="416" width="124.01" height="40" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-76" x="427.89" y="422" width="114.01" height="30" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-76" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-76" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 112px; height: 1px; padding-top: 429px; margin-left: 429px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Display Response</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-107" x="421.91" y="674.01" width="120" height="50" rx="15" ry="15" fill="#5faaed" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-107" x="421.91" y="674.01" width="120" height="50" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-108" x="427.33" y="677.01" width="110" height="46" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-108" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-108" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 108px; height: 1px; padding-top: 684px; margin-left: 428px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Apply Changes to Exercise</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-45" x="418.9" y="491" width="124.01" height="40" rx="15" ry="15" fill="#5faaed" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-45" x="418.9" y="491" width="124.01" height="40" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-46" x="419.9" y="490" width="124.01" height="40" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-46" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-46" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 122px; height: 1px; padding-top: 497px; margin-left: 421px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Display Component Plan</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="3h3Bq7rte33ndlk5ri2l-1" d="M 483.33 782.67 L 483.33 823.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="3h3Bq7rte33ndlk5ri2l-1" d="M 477.33 812.88 L 483.33 824.88 L 489.33 812.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-47" x="626" y="109" width="217" height="18" fill="none" stroke="#000000" stroke-width="2" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-47" fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+        <path d="M 723.24 113.893 L 724.406 113.893 L 724.406 121.475 L 728.766 121.475 L 728.766 122.5 L 723.24 122.5 Z M 729.902 113.893 L 731.068 113.893 L 731.068 121.475 L 735.427 121.475 L 735.427 122.5 L 729.902 122.5 Z M 736.547 113.893 L 738.217 113.893 L 740.69 121.17 L 743.145 113.893 L 744.797 113.893 L 744.797 122.5 L 743.69 122.5 L 743.69 117.42 Q 743.69 117.156 743.701 116.547 Q 743.713 115.937 743.713 115.24 L 741.258 122.5 L 740.104 122.5 L 737.631 115.24 L 737.631 115.504 Q 737.631 115.82 737.646 116.468 Q 737.66 117.115 737.66 117.42 L 737.66 122.5 L 736.547 122.5 Z"/>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-48" x="626" y="127" width="217" height="719" fill="none" stroke="#000000" stroke-width="2" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-49" x="665" y="357" width="141" height="41.01" rx="15" ry="15" fill="#5faaed" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-49" x="665" y="357" width="141" height="41.01" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-50" x="671" y="364" width="129.01" height="32" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-50" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-50" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 127px; height: 1px; padding-top: 371px; margin-left: 672px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <span style="font-family: 'helvetica' , 'vp default' ; font-size: 12px">Generate Response</span>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-51" x="663.5" y="679.01" width="141" height="41.01" rx="15" ry="15" fill="#5faaed" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-51" x="663.5" y="679.01" width="141" height="41.01" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-52" x="669.49" y="678.52" width="129.01" height="32" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-52" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-52" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 127px; height: 1px; padding-top: 686px; margin-left: 670px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <span style="font-family: 'helvetica' , 'vp default' ; font-size: 12px">Adapt Components of the Exercise</span>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-69" d="M 734 423.5 L 741 436 L 734 448.5 L 727 436 Z" fill="#5faaed" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-69" d="M 734 423.5 L 741 436 L 734 448.5 L 727 436 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-72" x="663" y="490" width="141" height="41.01" rx="15" ry="15" fill="#5faaed" stroke="#000000" pointer-events="all"/>
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-72" x="663" y="490" width="141" height="41.01" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-73" x="669" y="492" width="129.01" height="32" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-73" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-73" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 127px; height: 1px; padding-top: 499px; margin-left: 670px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <span style="font-family: 'helvetica' , 'vp default' ; font-size: 12px">Generate Component Plan</span>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-95" d="M 734.75 398 L 734.75 421.27" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-95" d="M 728.75 410.38 L 734.75 422.38 L 740.75 410.38" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-99" x="729.01" y="447" width="42.58" height="30" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-99" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-99" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 41px; height: 1px; padding-top: 454px; margin-left: 730px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">[Yes]</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-115" d="M 733.33 449.33 L 733.33 487.1" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-115" d="M 727.33 476.22 L 733.33 488.22 L 739.33 476.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="CwG2bGaCKcOYJwHhwmsQ-15" x="744" y="147" width="70.5" height="30" fill="#5faaed" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="CwG2bGaCKcOYJwHhwmsQ-15" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="CwG2bGaCKcOYJwHhwmsQ-15" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 69px; height: 1px; padding-top: 162px; margin-left: 745px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'Helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">Added</div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="CwG2bGaCKcOYJwHhwmsQ-87" x="744" y="177" width="70.5" height="30" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="CwG2bGaCKcOYJwHhwmsQ-87" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="CwG2bGaCKcOYJwHhwmsQ-87" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 69px; height: 1px; padding-top: 192px; margin-left: 745px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'Helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">Existing</div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-55" d="M 543.33 612.67 L 723.33 612.67 Q 733.33 612.67 733.33 622.67 L 733.33 677.1" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-55" d="M 727.33 666.22 L 733.33 678.22 L 739.33 666.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-57" d="M 171.67 612.67 L 421.1 612.67" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-57" d="M 410.22 618.67 L 422.22 612.67 L 410.22 606.67" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-59" d="M 418.33 511 L 225.57 511" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-59" d="M 236.45 505 L 224.45 511 L 236.45 517" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-88" d="M 223.33 764.33 L 421.1 764.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-88" d="M 410.22 770.33 L 422.22 764.33 L 410.22 758.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-53" d="M 222.5 375.25 L 422.76 375.99" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-53" d="M 411.86 381.95 L 423.88 376 L 411.9 369.95" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-92" d="M 539.91 377.51 L 662.76 377.51" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-92" d="M 651.88 383.51 L 663.88 377.51 L 651.88 371.51" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-102" d="M 726.67 436 L 547.24 436" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-102" d="M 558.12 430 L 546.12 436 L 558.12 442" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-103" d="M 663.33 511 L 545.57 511" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-103" d="M 556.45 505 L 544.45 511 L 556.45 517" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-105" d="M 421.67 436 L 173.33 436 Q 163.33 436 163.33 426 L 163.33 399.9" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-105" d="M 169.33 410.78 L 163.33 398.78 L 157.33 410.78" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-114" d="M 421.67 699.33 L 173.9 699.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-114" d="M 184.78 693.33 L 172.78 699.33 L 184.78 705.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <rect cell-id="LL7yqVo44hmtHknDGPsA-71" x="670" y="402.01" width="59.5" height="30" fill="none" stroke="none" pointer-events="all"/>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="LL7yqVo44hmtHknDGPsA-71" transform="translate(-0.5 -0.5)">
+        <foreignObject cell-id="LL7yqVo44hmtHknDGPsA-71" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 409px; margin-left: 671px;" xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+              <div style="display: inline-block; font-size: 12px; font-family: 'helvetica', 'VP Default'; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal;">
+                <font face="helvetica, vp default">Generate plan?</font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-116" d="M 663.33 699.33 L 543.9 699.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-116" d="M 554.78 693.33 L 542.78 699.33 L 554.78 705.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <ellipse cell-id="LL7yqVo44hmtHknDGPsA-118" cx="819" cy="10" rx="10" ry="10" fill="black" stroke="#000000" pointer-events="all"/>
+      <ellipse cell-id="LL7yqVo44hmtHknDGPsA-118" cx="819" cy="10" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-33" d="M 163.33 532.67 L 163.33 598.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-33" d="M 157.33 587.88 L 163.33 599.88 L 169.33 587.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-34" d="M 163.33 626 L 163.33 685.43" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-34" d="M 157.33 674.55 L 163.33 686.55 L 169.33 674.55" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-62" d="M 161.67 311 L 161.67 321.5 Q 161.67 331.5 162.5 331.5 L 162.92 331.5 Q 163.33 331.5 163.33 340.97 L 163.33 350.43" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-62" d="M 157.33 339.55 L 163.33 351.55 L 169.33 339.55" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-67" d="M 161.92 157 L 161.92 185.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-67" d="M 155.92 174.88 L 161.92 186.88 L 167.92 174.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-68" d="M 161.67 232.67 L 161.67 270.43" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-68" d="M 155.67 259.55 L 161.67 271.55 L 167.67 259.55" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-89" d="M 163.33 712.67 L 163.33 745.43" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-89" d="M 157.33 734.55 L 163.33 746.55 L 169.33 734.55" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-106" d="M 156.67 699.33 L 34 699.33 Q 24 699.33 24 689.33 L 24 384.33 Q 24 374.33 34 374.33 L 101.1 374.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-106" d="M 90.22 380.33 L 102.22 374.33 L 90.22 368.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="3h3Bq7rte33ndlk5ri2l-1" d="M 483.33 782.67 L 483.33 823.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="3h3Bq7rte33ndlk5ri2l-1" d="M 477.33 812.88 L 483.33 824.88 L 489.33 812.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-95" d="M 734.75 398 L 734.75 421.27" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-95" d="M 728.75 410.38 L 734.75 422.38 L 740.75 410.38" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-115" d="M 733.33 449.33 L 733.33 487.1" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-115" d="M 727.33 476.22 L 733.33 488.22 L 739.33 476.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-55" d="M 543.33 612.67 L 723.33 612.67 Q 733.33 612.67 733.33 622.67 L 733.33 677.1" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-55" d="M 727.33 666.22 L 733.33 678.22 L 739.33 666.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-57" d="M 171.67 612.67 L 421.1 612.67" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-57" d="M 410.22 618.67 L 422.22 612.67 L 410.22 606.67" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-59" d="M 418.33 511 L 225.57 511" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-59" d="M 236.45 505 L 224.45 511 L 236.45 517" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-88" d="M 223.33 764.33 L 421.1 764.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-88" d="M 410.22 770.33 L 422.22 764.33 L 410.22 758.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-53" d="M 222.5 375.25 L 422.76 375.99" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-53" d="M 411.86 381.95 L 423.88 376 L 411.9 369.95" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-92" d="M 539.91 377.51 L 662.76 377.51" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-92" d="M 651.88 383.51 L 663.88 377.51 L 651.88 371.51" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-102" d="M 726.67 436 L 547.24 436" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-102" d="M 558.12 430 L 546.12 436 L 558.12 442" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-103" d="M 663.33 511 L 545.57 511" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-103" d="M 556.45 505 L 544.45 511 L 556.45 517" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-105" d="M 421.67 436 L 173.33 436 Q 163.33 436 163.33 426 L 163.33 399.9" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-105" d="M 169.33 410.78 L 163.33 398.78 L 157.33 410.78" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-114" d="M 421.67 699.33 L 173.9 699.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-114" d="M 184.78 693.33 L 172.78 699.33 L 184.78 705.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <g shape-node="">
+      <path cell-id="LL7yqVo44hmtHknDGPsA-116" d="M 663.33 699.33 L 543.9 699.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path cell-id="LL7yqVo44hmtHknDGPsA-116" d="M 554.78 693.33 L 542.78 699.33 L 554.78 705.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+  </g>
+</svg>

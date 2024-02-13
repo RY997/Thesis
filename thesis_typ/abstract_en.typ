@@ -25,11 +25,8 @@
   align(center, text(font: body-font, 1em, weight: "semibold", "Abstract"))
   
   text[
-    Note:
-    1. *paragraph:* What is the motivation of your thesis? Why is it interesting from a scientific point of view? Which main problem do you like to solve?
-    2. *paragraph:* What is the purpose of the document? What is the main content, the main contribution?
-    3. *paragraph:* What is your methodology? How do you proceed?
-  ]
+    In response to the challenges posed by larger class sizes in computer science education, Artemis, an open-source learning platform, adopts interactive learning principles to enhance scalability and adaptability. However, the platform faces shortcomings in catering to the diverse skill levels and learning needs of students. This motivates the exploration of adaptive programming exercise generation, aiming to offer tailored challenges for individual learners. Adaptive exercises have the potential to both challenge advanced students and support beginners effectively, fostering intellectual growth and confidence. Leveraging advancements in Artificial Intelligence (AI), particularly Large Language Models (LLMs), this thesis introduces a novel approach to create adaptive programming exercises. The objectives include the development of a chatbot named Iris for intelligent exercise planning, enabling LLMs for dynamic exercise change plan execution, and seamlessly integrating exercise changes into the Artemis platform. This innovative methodology promises to revolutionize computer science education by providing personalized learning experiences and promoting continuous growth among students.
+    ]
   
   v(1fr)
 }

@@ -54,13 +54,13 @@
 
 = Introduction
 
-  In the digital age, the demand for computer scientists has witnessed a remarkable surge, resulting in an increasing number of students choosing computer-related majors in universities. This influx of students, however, has led to larger class sizes, presenting challenges to conventional teaching methods.
+In the digital age, the demand for computer scientists has witnessed a remarkable surge, resulting in an increasing number of students choosing computer-related majors in universities. This influx of students, however, has led to larger class sizes, presenting challenges to conventional teaching methods.
 
-In response to this issue, Artemis, an open-source learning platform designed for large computer science classes [KS18], introduces an innovative teaching philosophy known as interactive learning. Interactive learning represents a paradigm shift in education, emphasizing active student participation, collaboration, and real-time feedback [ABC20]. Unlike traditional lecture-based methods, interactive learning encourages students to engage with course content through discussions, problem-solving activities, and hands-on experiences.
+In response to this issue, Artemis, an open-source learning platform designed for large computer science classes @krusche2018artemis, introduces an innovative teaching philosophy known as interactive learning. Unlike traditional lecture-based methods, interactive learning encourages students to engage with course content through discussions, problem-solving activities, and hands-on experiences.
 
-Artemis's incorporation of interactive learning principles goes beyond traditional teaching approaches, providing students with a more dynamic and personalized learning experience. This approach not only enhances scalability and adaptability [Kru21] but also fosters a deeper understanding of complex concepts by promoting active involvement in the learning process.
+Artemis's incorporation of interactive learning principles goes beyond traditional teaching approaches, providing students with a more dynamic and personalized learning experience. This approach not only enhances scalability and adaptability @krusche2021interactive but also fosters a deeper understanding of complex concepts by promoting active involvement in the learning process.
 
-In the realm of computer science education, where programming plays a pivotal role [SSV20], practical hands-on experience is crucial for students to grasp programming concepts effectively [THH17]. Recognizing this, Artemis leverages interactive learning to transform the learning experience, offering a platform that encourages exploration, collaboration, and critical thinking among students.
+In the realm of computer science education, where programming plays a pivotal role @scherer2020meta, practical hands-on experience is crucial for students to grasp programming concepts effectively @teusner2017aspects. Recognizing this, Artemis leverages interactive learning to transform the learning experience, offering a platform that encourages exploration, collaboration, and critical thinking among students.
 
 Moreover, Artemis holds the potential to extend the benefits of interactive learning beyond traditional classroom interactions. By integrating dynamic programming exercise creation into the platform, Artemis can further amplify the advantages of interactive learning, providing tailored and adaptive content that aligns with individual student needs. This evolution in teaching methods not only addresses the challenges of larger class sizes but also ensures a more engaging and effective learning environment in the digital age.
 
@@ -73,7 +73,7 @@ the majority of students, it is inevitable that certain exercises will still
 pose challenges for some individuals. This can result in students becoming stuck at specific tasks, impeding their progress and necessitating the
 need for assistance from teaching assistants or peers. Prolonged instances
 of being stuck can lead to demotivation among students. As a result, students may likely learn very little and generally make teaching painful and
-frustrating [FSGO20].
+frustrating @filgona2020motivation.
 
 Conversely, some students may find the exercises too simple and feel that
 they do not provide an opportunity for self-improvement. Consequently, such
@@ -110,11 +110,11 @@ of the subject matter.
 
 Consequently, learners can experience a more captivating and effective
 learning journey, fostering their skill development and facilitating continuous
-growth [Abe22].
+growth @aberle2022adaptive.
 
 == Objectives
 
-The rapid advancement of Artificial Intelligence (AI), particularly Generative Pre-trained Transformer (GPT) models, presents a unique opportunity to revolutionize the field of computer science education [KSK+23]. In this master's thesis, our objective is to harness the capabilities of Large Language Models (LLMs) to create adaptive programming exercises. This innovative approach allows us to customize exercises precisely to meet the individual learning objectives and proficiency levels of students. To achieve this overarching goal, we have identified the following specific sub-goals:
+The rapid advancement of Artificial Intelligence (AI), particularly Generative Pre-trained Transformer (GPT) models, presents a unique opportunity to revolutionize the field of computer science education @kasneci2023chatgpt. In this master's thesis, our objective is to harness the capabilities of Large Language Models (LLMs) to create adaptive programming exercises. This innovative approach allows us to customize exercises precisely to meet the individual learning objectives and proficiency levels of students. To achieve this overarching goal, we have identified the following specific sub-goals:
 
 - *Intelligent Exercise Planning*
 Our first aim is to develop a chatbot named Iris, leveraging LLM technology. Iris will engage in dialogue with users to gain a comprehensive understanding of their needs and propose tailored exercise adaptation plans. These plans will be intelligently crafted to include adaptation strategies for the involved exercise components, enhancing feasibility and implementability.
@@ -177,6 +177,12 @@ While seamlessly integrated into Artemis, Iris also includes a standalone compon
 #pagebreak()
 
 = Related Work
+@leiker2023prototyping investigates the use of Large Language Models (LLMs) in asynchronous course creation for adult learning, training, and upskilling, with initial findings indicating that LLMs can facilitate faster content creation without compromising accuracy or clarity. The study highlights the potential of LLMs to transform the landscape of learning and education, necessitating further research and discussions on their strategic and ethical use in learning design.
+
+@shirafuji2023exploring investigates the capabilities of large language models (LLMs) such as Codex and ChatGPT in solving programming problems, emphasizing their understanding of problem descriptions and code generation processes. Experimental findings demonstrate that Codex and CodeGen are sensitive to minor alterations in problem descriptions, notably affecting their code generation performance. Codex's reliance on specific variable names is highlighted, with randomized variables significantly reducing its solving rate. In contrast, state-of-the-art models like InstructGPT and ChatGPT exhibit higher robustness to superficial modifications and excel in problem-solving tasks. The study underscores the importance of carefully formatted prompts for optimal code generation performance, as slight modifications can greatly impact results.
+
+@nijkamp2023codegen2 proposes that it will make the training of large language models (LLMs) for program synthesis more efficient by unifying model architectures, learning methods, infill sampling, and data distributions.
+
 
 #pagebreak()
 
@@ -184,21 +190,77 @@ While seamlessly integrated into Artemis, Iris also includes a standalone compon
 
 == Overview
 
-In this section, we will define the formal requirements for the AI assistant integrated into the Code Editor. To provide context, we will begin by introducing the current system and our proposed system then explore a series of scenarios that illustrate the envisioned utilization of Iris within the Code Editor. Subsequently, we will delineate a comprehensive list of functional requirements and non-functional requirements. Finally, we will present our system model.
+We proposed Iris code editor feature which aims to revolutionize the process of programming exercise adaptation by leveraging generative AI capabilities. Unlike the current manual adaptation process, which users need to do it manually, Iris integrates a ChatGPT-style chatbot to enable instructors to articulate their exercise vision effortlessly. This collaboration empowers instructors to maintain full control over exercise adaptation while allowing AI to seamlessly introduce numerous additions or modifications, from entire exercise structures to single lines of code.
+
+The system's functional requirements encompass the interaction between users and the system, including features such as chatting with Iris, reviewing and modifying exercise plans, executing plans, and viewing applied changes. Additionally, nonfunctional requirements ensure usability, supportability, reliability, and performance aspects of the system. And all of these requirements would be considered into our design.
+
+By streamlining the exercise creation process and fostering dynamic collaboration between instructors and AI, the Iris code editor system promises to accelerate exercise development, create a collaborative environment, and enhance the effectiveness of programming education.
 
 == Current System
   
-The entirety of the programming exercise demands manual adaptation either through the online Code Editor or within a local Integrated Development Environment (IDE). It is crucial to acknowledge that the feature set of the online code editor might not be as extensive as that of a local IDE. However, opting for a local IDE involves additional configuration efforts and the necessity to clone the repository for each exercise.
+The current system for programming exercises in Artemis primarily involves manual adaptation, either through the online Code Editor or a local Integrated Development Environment (IDE). Within the online Code Editor, users can access the four main components - the problem statement, template repository, solution repository, and test repository - by toggling between different repositories. Changes made within the online editor can be submitted, triggering automatic build processes with test case checks. However, it's important to note that the feature set of the online editor may not be as comprehensive as that of a local IDE; for instance, it may lack the ability to check code compilation before submission.
+
+Alternatively, users can opt for a local IDE, which offers greater flexibility in editing code. However, this method requires additional configuration efforts and the need to clone the repository using Git for each exercise. After updating the code repository content locally, users must commit and push the changes to remote repositories, allowing Artemis to fetch the latest version via the version control system and repository service. This process necessitates users to have a certain understanding of version control practices.
+
+Importantly, both approaches require manual editing by users, which can be cumbersome and time-consuming. This manual intervention is a significant aspect of the current system, highlighting the need for a more efficient and automated solution in the future.
 
 == Proposed System
+Our exploration commences with a detailed examination of the decision-making process involved in choosing between two prototypes. This critical design phase sets the foundation for the subsequent stages of our system. We will delve into the factors, considerations, and methodologies that guide us through this pivotal step, ensuring the selection of a prototype that aligns seamlessly with our objectives.
 
-We propose Iris code editor system which is enhanced with generative AI capabilities. Through collaboration with an embedded ChatGPT-style chatbot, instructors can effortlessly articulate their vision for the exercise, witnessing the Code Editor automatically adapt to their specifications. This innovative approach empowers instructors with the flexibility to maintain full control over the exercise while allowing the AI to seamlessly introduce numerous additions or modifications. The generated content, shaped by the AI, can span the entirety of the exercise or be as concise as a single line of code. This streamlined and intuitive process not only accelerates exercise creation but also fosters a dynamic and collaborative environment between instructors and artificial intelligence, unlocking new possibilities for engaging and effective programming education. In the following,
+*Prototype 1* focuses on the crucial aspect of exercise adaptation—adjusting the difficulty level—addressing the high-demand needs inherent in adaptive learning. When tailoring programming exercises to be more accessible than the basic level, our approach involves breaking down the task into detailed steps and providing comprehensive guidance. By furnishing explicit instructions and supplementary explanations, learners gain a deeper understanding of the problem, enhancing their foundational skills.
+
+Conversely, elevating the difficulty level of programming exercises demands a distinct strategy. Here, we streamline the task description, amalgamate multiple tasks into a more intricate problem, and reduce the pre-written code in the template. This reduction in scaffolding and guidance encourages advanced learners to apply their knowledge creatively, fostering a deeper engagement with the material.
+
+To implement these adaptive methods, adjustments to the problem statement and template repository sections are primarily required based on the foundational exercises. Additional instructions, such as providing comprehensive task guidance or increasing algorithmic complexity, are seamlessly integrated into the corresponding guidance template. This ensures that the Language Model Manager (LLM) produces results that are creative yet grounded in realism.
+
+In terms of template design, we introduce five guidance templates tailored to adapt the difficulty level of programming exercises:
+
+1. Harder Problem Statement Adaptation Template
+2. Easier Problem Statement Adaptation Template
+3. Template Repository Adaptation Template to modify the template code in accordance with the new problem statement.
+4. Solution Repository Adaptation Template to adjust the solution code based on the new problem statement and template repository.
+5. Test Repository Adaptation Template to modify the test code considering the new problem statement, template repository, and solution repository.
+The user interface (UI) design caters to the seamless integration of the adaptive exercise generation process for instructors. Utilizing the 'Generate Variants' feature, depicted in @generate-variant, instructors can effortlessly create new adaptive exercises across varying difficulty levels. This functionality empowers instructors to build upon the foundational basic exercise, generating diverse variations to cater to a wide spectrum of learner needs.
+
+#figure(
+  image("figures/generate-variant.png", width: 80%),
+  caption: [
+    The mockup of generating new adaptive exercise
+  ],
+) <generate-variant>
+
+*Prototype 2* is strategically designed to enhance the versatility and scalability of the project by expanding its scope to handle a broader array of adaptation requests.
+
+In this iteration, we adopt a more generalized approach, refraining from the inclusion of specific instructions regarding how to adapt to more challenging exercises. Instead, the Language Model Manager (LLM) is empowered to analyze the user's adaptation requests independently and determine the most effective means of fulfilling these requests. This adaptive functionality necessitates a dynamic interaction model where the LLM engages in a conversation with the user, seeking clarification on the request and subsequently generating a corresponding adaptation plan for the exercise.
+
+To facilitate this, we provide the LLM with a comprehensive context of the exercise, encompassing the problem statement and all three code repositories. This holistic approach maximizes the LLM's capabilities and enables it to perform its adaptive tasks with heightened efficacy.
+
+In terms of template design, our methodology identifies the requirement for five distinct Guidance templates, catering to diverse use cases:
+
+1. Chat Template: Designed to comprehend the exercise context and respond intelligently to user messages.
+2. Problem Statement Adaptation Template: Facilitates modifications to the problem statement based on the other three components.
+3. Template Repository Adaptation Template: Enables adjustments to the template code in alignment with the other three components.
+4. Solution Repository Adaptation Template: Supports modifications to the solution code based on the other three components.
+5. Test Repository Adaptation Template: Allows for alterations to the test code in concordance with the other three components.
+
+In the realm of user interface (UI) design, the Iris UI remains a reusable and integral component of Prototype 2. As depicted in @chat-window, showcasing the current UI, we leverage the existing Iris UI to ensure consistency and familiarity for users while accommodating the evolved capabilities of the LLM in adapting to a broader spectrum of user requests. 
+
+#figure(
+  image("figures/chat-window-dark.png", width: 60%),
+  caption: [
+    The Iris chat window UI
+  ],
+) <chat-window>
+
+Upon comparing the two prototypes, Prototype One's design closely aligns with a specific use case—namely, adjusting the difficulty of exercises. However, its limitations become apparent in terms of scalability and interactive capabilities. In contrast, Prototype Two boasts a more versatile design with a broader range of usage scenarios. Practical experimentation has underscored its efficacy in facilitating exercise modifications, showcasing commendable performance in scenarios involving changes to difficulty levels. 
+
+Consequently, after thorough consideration, we have opted to adopt the design of Prototype 2 and proposed Iris code editor system which is enhanced with generative AI capabilities. Through collaboration with an embedded ChatGPT-style chatbot, instructors can effortlessly articulate their vision for the exercise, witnessing the Code Editor automatically adapt to their specifications. This innovative approach empowers instructors with the flexibility to maintain full control over the exercise while allowing the AI to seamlessly introduce numerous additions or modifications. The generated content, shaped by the AI, can span the entirety of the exercise or be as concise as a single line of code. This streamlined and intuitive process not only accelerates exercise creation but also fosters a dynamic and collaborative environment between instructors and artificial intelligence, unlocking new possibilities for engaging and effective programming education. In the following,
 we will describe the functional and non-functional requirements of Iris code editor system using
-the Requirements Analysis Document Template in [BD09]
+the Requirements Analysis Document Template in @bruegge2009object
 
 === Functional Requirements
 
-Functional requirements stand independent of implementation details, specifically focusing on describing the interactions between the system and its environment, as articulated in [BD09].
+Functional requirements stand independent of implementation details, specifically focusing on describing the interactions between the system and its environment, as articulated in @bruegge2009object.
 
 - FR1 Chat with Iris in Code Editor: The user can chat with Iris via a chat window in Code Editor.
 - FR2 Iris suggests plan: In the event that the LLM decides it understands the user’s request, the LLM will additionally suggest a plan of action for adapting the exercise based on the user’s input, which will be displayed to the user in the chat window.
@@ -211,24 +273,31 @@ Functional requirements stand independent of implementation details, specificall
 - FR9 Clear chat history: The chat window will have a button that allows the user to clear the chat history.
 - FR10 Undo changes: The user will be able to undo Iris' changes to the exercise.
 
-=== Nonfunctional Requirements
-Nonfunctional requirements shed light on the aspects of a system that are not directly related to its functionality [BD09].
+=== Nonfunctional Requirements <nfr>
+Nonfunctional requirements shed light on the aspects of a system that are not directly related to its functionality @bruegge2009object.
 
-- NFR1 Functionality: The changes made by the LLM to the exercise will be accurate and relevant to the user’s input and the context of the exercise.
-- NFR2 Usability: The chat window will be minimizable and resizeable with a single click or drag respectively.
-- NFR3 Usability: The chat window will be clearly labeled and identifiable as a chat window.
-- NFR4 Supportability: The system will be LLM-agnostic, supporting any LLM that is capable of communicating with the system via the chat window.
-- NFR5 Supportability: The system will be configurable, allowing the user to specify the LLM that the system will communicate with.
-- NFR6 Reliability: The system will be able to handle any input from the user, including invalid input, without crashing.
-- NFR7 Reliability: The system will be able to handle any response from the LLM, including invalid responses, without crashing.
-- NFR8 Usability: The system will display accurate error messages to the user in the case of exceptional behavior, such as invalid input or invalid responses from the LLM.
+*Usability*
+- NFR1 Minimizable and Resizeable: The chat window will be minimizable and resizeable with a single click or drag respectively.
+- NFR2 Transparent Process: The system will display accurate error messages to the user in the case of exceptional behavior, such as invalid input or invalid responses from the LLM.
+- NFR3 Identifiable: The chat window will be clearly labeled and identifiable as a chat window.
+- NFR4 Model Configurable: The system will be configurable, allowing the user to specify the LLM that the system will communicate with.
+
+*Supportability*
+- NFR5 LLM-agnostic: The system will be LLM-agnostic, supporting any LLM that is capable of communicating with the system via the chat window.
+
+*Reliability*
+- NFR6 Input Processing: The system will be able to handle any input from the user, including invalid input, without crashing.
+- NFR7 Response Processing: The system will be able to handle any response from the LLM, including invalid responses, without crashing.
+*Performance*
+- NFR8 Reaction Time: The response of Iris should be displayed to users within 30 seconds for 95% of requests.
+
 
 == System Models
 
 In this section of the requirements analysis, we delineate the system models for the project. We commence by elucidating the envisioned scenarios for the system. Subsequently, we present the use case model, analysis object model, dynamic model, and user interface of the system, accompanied by comprehensive diagrams and detailed descriptions.
 === Scenarios
 
-As defined by [BD09], a scenario is described as 'a concrete, focused, informal description of a single feature of the system from the viewpoint of a single actor.' A visionary scenario represents an idealized solution to a problem, even if it may not be entirely achievable. In contrast, a demo scenario is one that is feasible, implementable, and can be demonstrated by the conclusion of this thesis. In this section, we will present both a visionary scenario and a demo scenario for our project.
+As defined by @bruegge2009object, a scenario is described as 'a concrete, focused, informal description of a single feature of the system from the viewpoint of a single actor.' A visionary scenario represents an idealized solution to a problem, even if it may not be entirely achievable. In contrast, a demo scenario is one that is feasible, implementable, and can be demonstrated by the conclusion of this thesis. In this section, we will present both a visionary scenario and a demo scenario for our project.
 
 We introduce the scenarios featuring Jane, an editor of a course in Artemis. Jane's objective is to adapt a sorting strategy programming exercise tailored to meet the diverse needs of students with varying levels of experience.
 #rect(
@@ -269,7 +338,7 @@ Recognizing the limitations and complexities involved, we set realistic expectat
 The demo scenario is more realistic than the previous one as it provides Iris with more specific instructions. These precise instructions enhance Iris's comprehension and organizational capabilities, providing a fixed endpoint and constraint. Furthermore, users have the capability to monitor the entire process. The execution of the corresponding plan only takes place after users approve Iris's proposed plan, enabling them to closely observe the execution process and subsequently review the changes implemented by Iris.
 === Use Case Model
 
-According to Bruegge and Dutoit, use cases are described as 'a function provided by the system that yields a visible result for an actor' [BD09]. In the context of this discussion, the actors are represented by editors interacting with the system Iris.
+According to Bruegge and Dutoit, use cases are described as 'a function provided by the system that yields a visible result for an actor' @bruegge2009object. In the context of this discussion, the actors are represented by editors interacting with the system Iris.
 
 The @use-case visually illustrates comprehensive use cases derived directly from the functional requirements outlined in Section 3.3.1. The interactive functionalities of the system empower users to seamlessly communicate with Iris through a dedicated chat window integrated into the Code Editor (FR1). This establishes a direct and intuitive channel for users to convey their requirements and receive assistance from Iris (FR2).
 
@@ -289,7 +358,7 @@ Following the execution of the plan, users can seamlessly verify the applied cha
 === Analysis Object Model
 
 As described by Bruegge and Dutoit, we use the analysis model to prepare for
-the architecture of the system [BD09]. The corresponding analysis object model is
+the architecture of the system @bruegge2009object. The corresponding analysis object model is
 shown in @analysis-object-model and includes the most important objects, attributes, methods
 and relations of the application domain. 
 
@@ -309,14 +378,14 @@ This modular and hierarchical structure within the IrisCodeEditorSession facilit
 === Dynamic Model
 
 #figure(
-  image("figures/activity.png", width: 80%),
+  image("figures/activity-diagram.png", width: 80%),
   caption: [
     Activity diagram of Iris code editor feature
   ],
 )<activity-diagram>
 
 The dynamic model describes the behavior of the system in terms of state changes
-[BD09]. @activity-diagram shows the dynamic model for the Iris integration into the Code
+@bruegge2009object. @activity-diagram shows the dynamic model for the Iris integration into the Code
 Editor in the form of a UML activity diagram.
 
 
@@ -330,13 +399,7 @@ Upon completing the exercise modifications, users have the flexibility to submit
 
 This section presents the user interface for the integration of Iris into the Code Editor.
 
-To enhance accessibility, the Iris button is now prominently positioned in the top right corner of the Code Editor. By clicking this button, users can open the chat window located in the bottom right corner. Figures @editor-day and @editor-night illustrate the Iris button and open chat window in both light and dark themes of the Code Editor Page¹³. An introductory message has been thoughtfully incorporated into the chat window, serving as an invitation for users to initiate a conversation with Iris.
-#figure(
-  image("figures/code-editor-day.png", width: 80%),
-  caption: [
-    Iris UI in the code editor page (light theme)
-  ],
-) <editor-day>
+To enhance accessibility, the Iris button is now prominently positioned in the top right corner of the Code Editor. By clicking this button, users can open the chat window located in the bottom right corner. @editor-night illustrate the Iris button and open chat window in dark themes of the Code Editor Page. An introductory message has been thoughtfully incorporated into the chat window, serving as an invitation for users to initiate a conversation with Iris.
 
 #figure(
   image("figures/code-editor-night.png", width: 80%),
@@ -411,59 +474,106 @@ In this section, we will discuss design decisions made in the implementation of 
 
 == Overview
 
-Our exploration commences with a detailed examination of the decision-making process involved in choosing between two prototypes. This critical design phase sets the foundation for the subsequent stages of our system. We will delve into the factors, considerations, and methodologies that guide us through this pivotal step, ensuring the selection of a prototype that aligns seamlessly with our objectives.
+Our proposed system, the Iris Code Editor, is designed to enhance the Artemis ecosystem by introducing advanced capabilities for exercise adaptation. With a focus on reliability, usability, cost-effectiveness, performance, and extensibility, derived from nonfunctional requirements, the Iris Code Editor aims to become a dependable feature within Artemis, encompasses meticulous exercise and user request analysis, forming a dynamic trio with Pyris and the Large language model, facilitating efficient communication through dedicated APIs.
 
-Following this, our focus shifts to the intricate lower-level methods employed in the generation and application of changes by the Language Model Manager (LLM) to the exercise. This phase is integral to the dynamic adaptability of our system, encompassing the fine-grained details of how the LLM orchestrates modifications, ensuring precision and coherence with the overarching goals of the exercise adaptation process. We will unravel the intricacies of this transformative process, shedding light on the mechanisms that underpin the seamless integration of changes proposed by the LLM into the exercise structure.
+== Design Goals
+#rect(
+  width: 100%,
+  radius: 10%,
+  stroke: 0.5pt,
+  fill: yellow,
+)[
+  Note: Derive design goals from your nonfunctional requirements, prioritize them (as they might conflict with each other) and describe the rationale of your prioritization. Any trade-offs between design goals (e.g., build vs. buy, memory space vs. response time), and the rationale behind the specific solution should be described in this section
+]
+In the design of our proposed system, we prioritize the following design goals, derived from the nonfunctional requirements outlined in @nfr:
 
-== Prototype Design
-*Prototype 1* focuses on the crucial aspect of exercise adaptation—adjusting the difficulty level—addressing the high-demand needs inherent in adaptive learning. When tailoring programming exercises to be more accessible than the basic level, our approach involves breaking down the task into detailed steps and providing comprehensive guidance. By furnishing explicit instructions and supplementary explanations, learners gain a deeper understanding of the problem, enhancing their foundational skills.
+Reliability Criteria: The foremost goal is to ensure that the Iris Code Editor becomes a reliable feature within the Artemis ecosystem. Achieving a high level of system availability, particularly in handling user inputs (NFR6) and LLM responses (NFR7), is paramount. This ensures a seamless user experience and builds trust in the system's performance.
 
-Conversely, elevating the difficulty level of programming exercises demands a distinct strategy. Here, we streamline the task description, amalgamate multiple tasks into a more intricate problem, and reduce the pre-written code in the template. This reduction in scaffolding and guidance encourages advanced learners to apply their knowledge creatively, fostering a deeper engagement with the material.
+Usability Criteria: User experience is central to our design goals as it directly impacts the effectiveness of the editors within Artemis. Users should be able to effortlessly navigate the exercise adaptation process (NFR2), configure preferred models (NFR4), and interact with a user interface that is identifiable (NFR3) and intuitive to use (NFR1).
 
-To implement these adaptive methods, adjustments to the problem statement and template repository sections are primarily required based on the foundational exercises. Additional instructions, such as providing comprehensive task guidance or increasing algorithmic complexity, are seamlessly integrated into the corresponding guidance template. This ensures that the Language Model Manager (LLM) produces results that are creative yet grounded in realism.
+Cost Criteria: Given Artemis's status as an open-source project with limited funding, minimizing maintenance and administration costs is crucial. Therefore, we aim to balance affordability with the quality of exercise adaptation results and user satisfaction, ensuring cost-effective solutions without compromising functionality or user experience.
 
-In terms of template design, we introduce five guidance templates tailored to adapt the difficulty level of programming exercises:
+Performance Criteria: Seamless integration within the Artemis exercise adaptation workflow is essential, necessitating swift provision of exercise adaptation plans by Iris, ideally within 20 seconds (NFR 8). While maintaining a high standard of response times, we acknowledge the need for some trade-offs to ensure the quality of results while optimizing resource usage.
 
-1. Harder Problem Statement Adaptation Template
-2. Easier Problem Statement Adaptation Template
-3. Template Repository Adaptation Template to modify the template code in accordance with the new problem statement.
-4. Solution Repository Adaptation Template to adjust the solution code based on the new problem statement and template repository.
-5. Test Repository Adaptation Template to modify the test code considering the new problem statement, template repository, and solution repository.
-The user interface (UI) design caters to the seamless integration of the adaptive exercise generation process for instructors. Utilizing the 'Generate Variants' feature, depicted in @generate-variant, instructors can effortlessly create new adaptive exercises across varying difficulty levels. This functionality empowers instructors to build upon the foundational basic exercise, generating diverse variations to cater to a wide spectrum of learner needs.
+Extensibility Criteria: While the extensibility of LLM models (NFR5) is valuable for future enhancements, we prioritize limited models with good performance. This approach ensures a balance between flexibility and performance, allowing for manageable integration and scalability within the Artemis ecosystem.
 
-#figure(
-  image("figures/generate-variant.png", width: 80%),
-  caption: [
-    The mockup of generating new adaptive exercise
-  ],
-) <generate-variant>
+This prioritization strategy aims to establish the Iris Code Editor Feature as a reliable, user-centric, cost-effective, and extensible addition to the Artemis ecosystem. By aligning with the community-driven, open-source nature of the project, we strive to deliver a solution that meets the diverse needs of users while upholding high standards of reliability and usability.
 
-*Prototype 2* is strategically designed to enhance the versatility and scalability of the project by expanding its scope to handle a broader array of adaptation requests.
 
-In this iteration, we adopt a more generalized approach, refraining from the inclusion of specific instructions regarding how to adapt to more challenging exercises. Instead, the Language Model Manager (LLM) is empowered to analyze the user's adaptation requests independently and determine the most effective means of fulfilling these requests. This adaptive functionality necessitates a dynamic interaction model where the LLM engages in a conversation with the user, seeking clarification on the request and subsequently generating a corresponding adaptation plan for the exercise.
+== Subsytem Decomposition
 
-To facilitate this, we provide the LLM with a comprehensive context of the exercise, encompassing the problem statement and all three code repositories. This holistic approach maximizes the LLM's capabilities and enables it to perform its adaptive tasks with heightened efficacy.
+As an integral subsystem of Artemis, Iris plays a pivotal role in enhancing the overall user experience by meticulously analyzing exercises and user requests to generate highly-targeted suggestions. Functioning in harmony with Pyris, which acts as the intermediary for user requests and responses from the LLM—Iris forms a dynamic trio to empower Artemis with advanced capabilities.
 
-In terms of template design, our methodology identifies the requirement for five distinct Guidance templates, catering to diverse use cases:
+Pyris acts as the communication bridge between Artemis and the LLM, efficiently handling requests and relaying responses in a timely manner.
 
-1. Chat Template: Designed to comprehend the exercise context and respond intelligently to user messages.
-2. Problem Statement Adaptation Template: Facilitates modifications to the problem statement based on the other three components.
-3. Template Repository Adaptation Template: Enables adjustments to the template code in alignment with the other three components.
-4. Solution Repository Adaptation Template: Supports modifications to the solution code based on the other three components.
-5. Test Repository Adaptation Template: Allows for alterations to the test code in concordance with the other three components.
-
-In the realm of user interface (UI) design, the Iris UI remains a reusable and integral component of Prototype 2. As depicted in @chat-window, showcasing the current UI, we leverage the existing Iris UI to ensure consistency and familiarity for users while accommodating the evolved capabilities of the LLM in adapting to a broader spectrum of user requests. 
-
-Upon comparing the two prototypes, Prototype One's design closely aligns with a specific use case—namely, adjusting the difficulty of exercises. However, its limitations become apparent in terms of scalability and interactive capabilities. In contrast, Prototype Two boasts a more versatile design with a broader range of usage scenarios. Practical experimentation has underscored its efficacy in facilitating exercise modifications, showcasing commendable performance in scenarios involving changes to difficulty levels. Consequently, after thorough consideration, we have opted to adopt the design of Prototype 2.
-
+This intricate network of subsystems communicates seamlessly, as illustrated in <subsystem-component>, with the exchange facilitated through dedicated APIs and employing the versatile REST interface and websocket service. The utilization of JSON serialization further streamlines the data exchange process, ensuring efficiency and compatibility across all components. 
 
 #figure(
-  image("figures/chat-window-dark.png", width: 60%),
+  image("figures/subsystem.svg", width: 80%),
   caption: [
-    The Iris chat window UI
+    Subsystem decomposition diagram: Overview of the interaction between Iris,
+Artemis and Pyris
   ],
-) <chat-window>
+) <subsystem-component>
 
+=== Artemis Server
+The Artemis Server, meticulously crafted using Java and Spring Boot, stands as a cornerstone in the endeavors discussed within this thesis. 
+
+@server-component offers an insightful depiction of the Artemis Server’s subsystems. The system's architecture is structured into three distinct layers: the web layer, the application layer, and the data layer. Within this framework, the modules for _Iris Code Editor Session Resource_ and _Iris Code Editor Message Resource_ are pivotal, as they expose endpoints facilitating the retrieval and creation of Iris code editor sessions and messages.
+
+Whenever updates occur within these domains, the _Iris Code Editor Session Service_, serving as the cornerstone of the Iris Code Editor feature, is triggered. This service relies on the _Iris Settings Service_ to procure the currently configured guidance template for the respective course in which the user is actively participating. Additionally, it employs repository classes to locate and validate sessions, messages, and exercise plan steps. The _Iris Connector Service_ manages communication with Pyris to obtain responses from LLM, which are then parsed and relayed to the user through the _Iris Code Editor Websocket Service_.
+
+This intricate orchestration of services highlights the comprehensive functionality of the Artemis Server, particularly in the context of Iris and its seamless integration within the Code Editor environment.
+
+#figure(
+  image("figures/ServerSubsystem.svg", width: 90%),
+  caption: [
+    Subsystem decomposition of the Artemis Server
+  ],
+) <server-component>
+
+
+=== Artemis Client
+The Artemis Client, crafted using Angular, is structured into two primary layers: the UI layer, composed of Angular components, and the service layer, which primarily handles interactions with the Artemis API.
+
+@client-component provides an insightful overview of the Iris Code Editor project within the Artemis client's subsystems.
+
+The _Iris Code Editor Websocket Service_ assumes a pivotal role in receiving messages from the server via a WebSocket connection, subsequently exposing them through an observable stream. The _Code Editor Instructor And Editor Container Component_, representing the _Code Editor_, subscribes to this stream and forwards WebSocket messages to the _Iris Chatbot Widget Component_ via the _Iris Code Editor Chatbot Button Component_. The latter will pass the information of the current session to the widget component. User requests are transmitted to the server through the _Iris Code Editor Session Service_ within the _Iris Chatbot Widget Component_. Concurrently, the IrisStateStore monitors the session status and continuously stores the messages.
+
+This intricate collaboration ensures a seamless and responsive integration of Iris features within the Code Editor component.
+
+#figure(
+  image("figures/ClientSubsystem.svg", width: 90%),
+  caption: [
+    Subsystem decomposition of the Artemis Client
+  ],
+) <client-component>
+
+== Process Control
+In prioritizing user experience, we aim to empower users with control over the plan execution process. With this approach, clients are granted authority to manage the process. By enabling actions such as executing and pausing plans, the client sends distinct requests to the server and presents corresponding statuses to the user, as illustrated in @communication.
+
+#figure(
+  image("figures/CommunicationDiagram.svg", width: 90%),
+  caption: [
+    Communication diagram of plan execution process
+  ],
+) <communication>
+
+== Access Control
+In the Iris Code Editor subsystem, the application client interacts with resources and operations through REST-based HTTP communication and WebSocket service. Each implemented endpoint on the server verifies that the requesting user possesses the necessary privileges for the relevant course and exercise.
+
+To ensure secure access, the server utilizes an existing service to validate whether the requester has permission to access the specified exercise.
+
+In terms of Iris settings configuration, access is restricted to users with administrator rights within the Artemis environment.
+
+Regarding the Iris Code Editor feature, access is limited to users with editor rights specific to the exercise. Additionally, each user is assigned a unique session ID when communicating with Iris, ensuring privacy, as only the respective user can access the chat history between themselves and Iris.
+
+
+#pagebreak()
+
+= Implementation Details
+
+This section introduces some details worth mentioning of the current implementation. First, we introduce the methods employed in the generation and application of changes by the Language Model Manager (LLM) to the exercise. This phase is integral to the dynamic adaptability of our system, encompassing the fine-grained details of how the LLM orchestrates modifications, ensuring precision and coherence with the overarching goals of the exercise adaptation process. We will unravel the intricacies of this transformative process, shedding light on the mechanisms that underpin the seamless integration of changes proposed by the LLM into the exercise structure. Next we introduce new changes to the Pyris system where we optimize response formats for the specific needs of code editor use cases.
 
 == Apply changes
 Firstly, it is important to note that, considering user experience and the precision of changes introduced by Iris, changes will not be automatically saved in the database. Instead, they will be displayed in the online code editor for the user to review. Only upon user approval will the changes be saved by submitting the code and saving the problem statement to update the database.
@@ -484,58 +594,10 @@ The disadvantage is that it's difficult to obtain the unsaved changes of the rep
 
 Considering the performance and robustness of the project, we decided to implement the second approach. However, due to time constraints, we did not achieve the new storage method. It will be included in future work.
 
-== Subsytem Decomposition
+== Pyris
 
-As an integral subsystem of Artemis, Iris plays a pivotal role in enhancing the overall user experience by meticulously analyzing exercises and user requests to generate highly-targeted suggestions. Functioning in harmony with two other essential subsystems—namely, the Git service, responsible for managing the code repositories of the programming exercises, and Pyris, which acts as the intermediary for user requests and responses from the LLM—Iris forms a dynamic trio to empower Artemis with advanced capabilities.
+In our pursuit of optimizing the response format for the specific needs of the code editor use case, we have undertaken a crucial modification in Pyris. This enhancement involves the creation of a novel message endpoint /api/v2/messages tailored to our requirements. In contrast to the conventional response format, which typically returns only the 'response' variable,  our new endpoint is designed to yield all content generated within a guidance program. For example, if the generated variables from LLM looks like this: {contextfile: this is a test context file, response: this is a test response}, the initial system endpoint (/api/v1/messages) will return {response: this is a test response}, but the new endpoint will return all content of the generated variables {contextfile: this is a test context file, response: this is a test response}.
 
-The Git service ensures seamless access to a comprehensive array of programming exercises, fostering a diverse and engaging learning environment. Meanwhile, Pyris acts as the communication bridge between Artemis and the LLM, efficiently handling requests and relaying responses in a timely manner.
-
-This intricate network of subsystems communicates seamlessly, as illustrated in <subsystem-component>, with the exchange facilitated through dedicated APIs and employing the versatile REST interface and websocket service. The utilization of JSON serialization further streamlines the data exchange process, ensuring efficiency and compatibility across all components. This collaborative approach enables Artemis to deliver a sophisticated and responsive platform, seamlessly integrating Iris's analytical prowess with the expansive exercise repositories managed by the Git service and the dynamic communication capabilities of Pyris.
-
-#figure(
-  image("figures/subsystem.svg", width: 80%),
-  caption: [
-    Subsystem decomposition diagram: Overview of the interaction between Iris,
-Artemis and Pyris
-  ],
-) <subsystem-component>
-
-=== Artemis Server
-The Artemis Server, meticulously crafted using Java and Spring Boot, stands as a cornerstone in the endeavors discussed within this thesis. Iris, a pivotal subsystem, is integrated into the Code Editor and uses Iris code editor session to manage the interactions between Code Editor and Iris, observed within the Code Editor component, as exemplified in @server-component. For seamless user interaction, the message resource and session resource expose pertinent REST endpoints, allowing users to perform actions such as creating a code editor session and communicating with Iris (FR1), as well as executing individual steps of an exercise plan (FR5).
-
-@server-class offers a static structural overview of the server classes related to the IrisCodeEditorSessionService, a critical class for Iris Chatbot functionality, presented as a UML class diagram. The IrisCodeEditorSessionService relies on the IrisSettingsService to fetch the currently configured guidance template for the course in which the user is engaged. It further utilizes repository classes to locate and validate sessions, messages and exercise plan steps. Message storage is facilitated by the IrisMessageService, while communication with Pyris is managed through the IrisConnectorService to obtain a response from LLM. This response is parsed and subsequently relayed to the user via the IrisWebsocketService. This intricate interplay of services underscores the comprehensive functionality of the Artemis Server, particularly in the context of Iris and its dynamic integration within the Code Editor.
-
-#figure(
-  image("figures/artemis-server-component-d.png", width: 80%),
-  caption: [
-    Subsystem decomposition of the Artemis Server and Iris subsystem
-  ],
-) <server-component>
-#figure(
-  image("figures/server-class.svg", width: 80%),
-  caption: [
-    Class diagram of Iris code editor session (server)
-  ],
-) <server-class>
-
-=== Artemis Client
-@client-class provides insight into the static structure of client classes involved in the Iris Code Editor project.
-
-The client-side IrisCodeEditorWebsocketService plays a pivotal role in receiving messages from the server through a WebSocket connection, subsequently exposing them via an observable stream. The CodeEditorInstructorAndEditorContainerComponent, representing the Code Editor, subscribes to this stream. Beyond message handling, this component, assisted by the ProfileService and IrisSettingsService, ensures that Iris is enabled both in Artemis and the current course. It selectively displays the Iris button and chat window only if these conditions are met.
-
-The CodeEditorInstructorAndEditorContainerComponent then forwards WebSocket messages to the IrisChatbotWidgetComponent via IrisCodeEditorChatbotButtonComponent for presentation to the user. Importantly, the IrisChatbotWidgetComponent possesses the capability to send message requests to the server through the IrisHttpCodeEditorMessageService, with these requests being received by the IrisCodeEditorMessageResource. In the meanwhile, IrisStateStore keeps track on the status of the session and stores the messages continuously. This intricate interplay of client classes ensures a seamless and responsive integration of Iris features within the Code Editor component.
-
-#figure(
-  image("figures/client-class.svg", width: 80%),
-  caption: [
-    Class diagram of Iris code editor session (client)
-  ],
-) <client-class>
-
-
-=== Pyris
-
-In our pursuit of optimizing the response format for the specific needs of the code editor use case, we have undertaken a crucial modification in Pyris. This enhancement involves the creation of a novel message endpoint /api/v2/messages tailored to our requirements. In contrast to the conventional response format, which typically returns only the 'response' variable, our new endpoint is designed to yield all content generated within a guidance program.
 
 This alteration is particularly impactful for the code editor use case, providing a more comprehensive and nuanced insight into the guidance program's outcomes. By retrieving all content, we ensure that every element generated by the guidance program is accessible, facilitating a richer and more detailed understanding for further processing.
 
