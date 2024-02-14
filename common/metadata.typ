@@ -1,6 +1,6 @@
 // Enter your thesis data here:
-#let titleEnglish = "Leveraging Generative AI for AdaptiveExercise Generation"
-#let titleGerman = "Nutzung Generativer KI für die AdaptiveGenerierung von Aufgaben"
+#let titleEnglish = "Leveraging Generative AI for Adaptive Exercise Generation"
+#let titleGerman = "Nutzung Generativer KI für die Adaptive Generierung von Aufgaben"
 #let degree = "Master"
 #let program = "Informatics"
 #let supervisor = "Prof. Dr. Stephan Krusche"

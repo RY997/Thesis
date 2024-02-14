@@ -20,29 +20,24 @@
   // --- Acknowledgements ---
   align(left, text(font: sans-font, 2em, weight: 700,"Acknowledgements"))
   text[
-    I would like to extend my sincere gratitude to the following people, without
-whom this thesis would not have been possible:
+I would like to express my heartfelt gratitude to the following people, whose contributions were indispensable in bringing this thesis to fruition:
 
-To Prof. Dr. Stephan Krusche, for his motivating and supportive supervision of
-this project.
+To Prof. Dr. Stephan Krusche, for his invaluable guidance and unwavering support throughout this project.
 
-To my thesis advisor Patrick Bassner, for his encouraging mentorship and for
-helping me to stay on track.
+To my thesis advisor, Patrick Bassner, for his mentorship and encouragement, which helped me navigate through the challenges of this thesis.
 
-To my project partner Xinyao Liu, for her hard work and dedication and for
-spending many long hours with me working on this project.
+To my project partner, Michael Dyer, for his hard work, dedication, and countless hours spent collaborating with me which were instrumental to the success of this project.
 
-To Timor Morrien, whom Xinyao and I have been working closely with on the
-Iris project, for his invaluable assistance and advice in the development of this
-thesis.
+To Timor Morrien, for his invaluable assistance and insightful advice during the development of this thesis.
 
-To the participants of the Interactive Learning practical course in the Summer
-Semester of 2023, for their hard work and dedication in founding the Iris
-project. I am proud to have been a part of this team.
+To participants of the Interactive Learning practical course (Summer Semester 2023), for their dedication and efforts in founding the Iris project, laying the groundwork for the success of this thesis.
 
-To the members of Artemis developer team, for their careful review and feedback of this thesis project.
+To members of the Artemis developer team: for their meticulous review and constructive feedback on this thesis project.
 
-And finally, to my parents, for their unconditional love and support.
+To my friends, Yanjie Li and Basak Akan, for their encouragement, which was a source of strength during challenging times throughout this project.
+
+To my parents, for their unconditional love and unwavering support.
+
   ]
   v(15mm)
 }
